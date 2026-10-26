@@ -1,0 +1,99 @@
+/* Estilos del Hub. Tokens en hub-tokens.css; cada módulo tiene sus propios estilos. */
+* { box-sizing: border-box; }
+
+body.hub {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--vx-backdrop), var(--vx-bg);
+  background-attachment: fixed;
+  color: var(--vx-text);
+  font-family: var(--vx-font);
+  font-weight: 400;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.hub-wrap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
+
+.hub-header { padding: 72px 0 48px; }
+.hub-eyebrow {
+  margin: 20px 0 0;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--vx-green);
+}
+.hub-title {
+  margin: 0;
+  font-size: clamp(36px, 7vw, 56px);
+  font-weight: 500;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+  line-height: 1.05;
+}
+.hub-logo { display: block; width: clamp(200px, 40vw, 340px); height: auto; }
+.hub-version { margin: 16px 0 0; color: var(--vx-text-2); font-size: 15px; display: flex; gap: 12px; align-items: center; }
+.hub-version-tag {
+  padding: 3px 8px;
+  border: 1px solid var(--vx-green);
+  border-radius: var(--vx-radius);
+  color: var(--vx-green);
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: .06em;
+}
+
+.hub-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 72px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.hub-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 18px;
+  height: 100%;
+  padding: 28px;
+  border: 1px solid var(--vx-border);
+  border-radius: var(--vx-radius-card);
+  background: linear-gradient(160deg, var(--vx-surface-2), var(--vx-surface));
+  color: inherit;
+  text-decoration: none;
+  transition: border-color .2s, box-shadow .2s, transform .2s;
+}
+.hub-card:hover { border-color: rgba(163, 116, 245, .5); box-shadow: var(--vx-glow); transform: translateY(-2px); }
+.hub-card:focus-visible { outline: 2px solid var(--vx-green); outline-offset: 4px; }
+
+.hub-card-icon {
+  width: 48px; height: 48px;
+  display: grid; place-items: center;
+  border-radius: var(--vx-radius);
+  background: var(--vx-violet-soft);
+  color: var(--vx-violet-light);
+}
+.hub-card-body { display: flex; flex-direction: column; gap: 6px; }
+.hub-card-title { font-size: 17px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; }
+.hub-card-desc { color: var(--vx-text-2); font-size: 15px; }
+
+.hub-tag {
+  grid-column: 1 / -1;
+  justify-self: start;
+  padding: 4px 10px;
+  border-radius: var(--vx-radius);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.hub-tag--review { border: 1px solid var(--vx-green); color: var(--vx-green); }
+.hub-tag--progress { background: var(--vx-green-soft); color: var(--vx-green); }
+
+@media (prefers-reduced-motion: reduce) {
+  .hub-card { transition: none; }
+  .hub-card:hover { transform: none; }
+}

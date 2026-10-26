@@ -1,0 +1,4 @@
+# Archivos de trabajo que no se publican en Vercel
+.project/
+.claude/
+README.md

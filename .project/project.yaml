@@ -1,0 +1,199 @@
+schema_version: "0.5.0"
+last_updated: "2026-10-26"
+
+project:
+  name: "Vortex IT · Research de audiencias e imagen"
+  client: "Vortex IT"
+  local_root: "."
+
+ux:
+  primary: research
+  secondary: [audit]          # auditoría de imagen/presencia, dirigida por el research
+  continuity: new
+  surface: web                # web + redes (Instagram, LinkedIn, YouTube)
+  client_decision: prioritize # a qué audiencias y canales priorizar
+  research_mode: plan
+
+origin:
+  mode: from-scratch          # carpeta vacía; fuentes públicas como evidencia
+
+strategy:
+  current_focus: "Paso 0 del research: modelo general de públicos y confianza, construido sin partir de la web actual. Documentar el roadmap completo."
+  intervention: not-applicable
+  additional_scope: []
+  recommended_next:
+    - "Cerrar paso 0: revisión del modelo de públicos con dirección, comercial y marketing"
+    - "Relevar qué datos internos existen (CRM, analítica, métricas de redes)"
+    - "Opcional en paralelo: pasos 3 (auditoría de presencia) y 4 (benchmark)"
+  deferred:
+    - "Módulo de propuesta de diseño en el Hub: se agrega cuando exista (sin tarjeta 'próximamente')"
+
+knowledge:
+  confirmed: []
+  assumptions:
+    - "H1–H6 en modules/documentation/research/encuadre.md"
+    - "Orden preliminar de públicos en modules/documentation/research/modelo-de-publicos.md (sección 5)"
+  open_questions:
+    - "Qué datos internos existen y se pueden compartir"
+    - "Quiénes participan en entrevistas internas"
+    - "Objetivo comercial prioritario (industria, país, servicio o plataforma)"
+    - "Competidores de referencia"
+  superseded:
+    - item: "Encuadre v1 basado en la web e Instagram actuales (00-encuadre-y-plan.md)"
+      replaced_by: "01-encuadre.md: modelo general de públicos primero, la web como objeto de evaluación"
+      date: "2026-10-26"
+      source: user
+
+decisions:
+  - decision: "Escenario principal research (modo plan), auditoría de imagen como secundaria posterior"
+    basis: deduced
+    date: "2026-10-26"
+  - decision: "Partir de un modelo general de públicos (no de la web actual) para evitar sesgo"
+    basis: user
+    date: "2026-10-26"
+  - decision: "Propósito 'crear confianza' operacionalizado por público: qué necesita para confiar y cuál es su siguiente paso"
+    basis: user
+    date: "2026-10-26"
+  - decision: "Entrega directa por ahora; estructura preparada para Hub"
+    basis: recommended-default
+    date: "2026-10-26"
+    superseded_by: "Hub orientado a UX Research"
+  - decision: "Entrega por Hub, orientado a UX Research; se sumará un módulo de diseño más adelante"
+    basis: user
+    date: "2026-10-26"
+  - decision: "Hub estático en la raíz, sin build; los .md son la fuente y el módulo Research los muestra con un visor propio"
+    basis: recommended-default
+    date: "2026-10-26"
+  - decision: "El Hub usa la identidad visual actual de vortex-it.com (verde #A0D232, violetas, fondo oscuro, Rubik), sólo en modo oscuro"
+    basis: user
+    date: "2026-10-26"
+  - decision: "Los estilos del Hub (assets/hub-tokens.css, assets/ESTILO-HUB.md) son sólo del Hub; no son base de la futura propuesta de diseño, que tendrá sus propios tokens y módulo aislado"
+    basis: user
+    date: "2026-10-26"
+
+  - decision: "El Hub tiene dos módulos conectados: UX Research (síntesis humanizada para cliente/ejecutivo) y Documentación (fuente detallada, spec/data-driven, legible por IA). Ante diferencias manda Documentación"
+    basis: user
+    date: "2026-10-26"
+  - decision: "Navegación sintética: las tarjetas (Hub y submódulos de Research) muestran sólo ícono, título, descripción y estado; las aclaraciones van dentro de cada módulo"
+    basis: user
+    date: "2026-10-26"
+  - decision: "Submódulos de Research: plan, públicos, negocio, auditoría web, comunicación, benchmark, validación, conclusiones. Los pendientes muestran qué se va a responder y cómo (destino real, no 'próximamente')"
+    basis: recommended-default
+    date: "2026-10-26"
+  - decision: "Documentación en Markdown con metadatos (id, type, status, evidence, updated, depends_on, feeds); datos estructurados futuros en data/"
+    basis: recommended-default
+    date: "2026-10-26"
+  - decision: "Usar el logo de Vortex en el Hub (assets/brand/vortex-logo.svg, tomado de vortex-it.com)"
+    basis: user
+    date: "2026-10-26"
+  - decision: "Documentación se presenta como lista de documentos con buscador en el contenido; el documento se abre aparte, sin barra lateral"
+    basis: user
+    date: "2026-10-26"
+  - decision: "Versionar el Hub en github.com/Marcolof/auditoria-web-vortex (rama main) y preparar despliegue estático en Vercel"
+    basis: user
+    date: "2026-10-26"
+  - decision: "Hub publicado con X-Robots-Tag noindex (no indexable por buscadores)"
+    basis: recommended-default
+    date: "2026-10-26"
+
+sources:
+  - id: web
+    url: "https://vortex-it.com/"
+    type: public-website
+    reviewed_at: "2026-10-26"
+    scope: "home, /hablemos"
+  - id: instagram-reel
+    url: "https://www.instagram.com/vortex.it/reel/Dbs104DxJxL/"
+    type: social
+    reviewed_at: "2026-10-26"
+    scope: "texto del reel (sin sesión)"
+  - id: logo
+    url: "https://vortex-it.com/assets/Logo%20VX_blanco%20y%20violeta.svg"
+    type: brand-asset
+    retrieved_at: "2026-10-26"
+    local_copy: assets/brand/vortex-logo.svg
+    note: "SVG revisado: sin scripts ni referencias externas"
+
+delivery:
+  mode: hub
+  primary_artifact: index.html
+  local_status: local-verified
+  repository: "https://github.com/Marcolof/auditoria-web-vortex"
+  repository_visibility: public
+  repository_status: connected
+  branch: main
+  deploy_target: vercel        # proyecto Vercel a crear por el usuario e importar desde el repo
+  deploy_config: "vercel.json + .vercelignore; estático, sin build ni variables de entorno"
+  status: local-only
+  last_verified: "2026-10-26"
+
+architecture:
+  build_root: "."
+  build: none                 # HTML estático; requiere servidor HTTP para leer los .md (no funciona con file://)
+  local_server: ".claude/launch.json → python -m http.server 8765"
+  hub_route: "/"              # index.html + assets/hub.css
+  deep_linking:
+    research: "modules/research/?m=<id>#<ancla>"
+    documentation: "modules/documentation/?doc=<ruta.md>[&q=<búsqueda>]#<ancla> · lista: modules/documentation/?q=<búsqueda>"
+  module_style_isolation: required   # hub: assets/hub.css · research: modules/research/_view/ (scope body.rs)
+  shared_layer: "assets/hub-tokens.css — tokens del Hub para el Hub y módulos documentales; un módulo de diseño NO lo importa"
+  hub_style_reference: modules/documentation/proyecto/estilo-hub.md
+  shared_viewer: "assets/md-viewer.js + assets/md-base.css — motor común para mostrar Markdown; cada módulo pone layout y estilos propios"
+  external_dependencies:
+    - "marked 12.0.2 (cdnjs) para renderizar Markdown en el visor de Research"
+    - "Rubik (Google Fonts)"
+
+capabilities: {}
+tools:
+  python:
+    status: ready
+    checked_at: "2026-10-26"
+  browser:
+    status: ready
+    checked_at: "2026-10-26"
+
+modules:
+  hub:
+    path: index.html
+    status: draft
+    verification: local-verified
+    cards: [research, documentation]
+  research:
+    path: modules/research
+    purpose: "Síntesis para cliente y ejecutivos"
+    landing: modules/research/index.html
+    manifest: modules/research/modulos.json   # fuente de tarjetas y estados de submódulos
+    view_assets: modules/research/_view/
+    children:
+      - { id: research-plan, path: modules/research/plan.md, audience: client, status: review, freshness: current, evidence: assumption, verification: content-reviewed, depends_on: [research.encuadre, research.roadmap] }
+      - { id: research-publicos, path: modules/research/publicos.md, audience: client, status: review, freshness: current, evidence: assumption, verification: content-reviewed, depends_on: [research.modelo-de-publicos] }
+      - { id: research-negocio, path: modules/research/negocio.md, audience: client, status: draft, freshness: current, evidence: none, verification: content-reviewed, note: "plan del submódulo; sin hallazgos" }
+      - { id: research-auditoria-web, path: modules/research/auditoria-web.md, audience: client, status: draft, freshness: current, evidence: none, verification: content-reviewed, note: "plan del submódulo; sin hallazgos" }
+      - { id: research-comunicacion, path: modules/research/comunicacion.md, audience: client, status: draft, freshness: current, evidence: none, verification: content-reviewed, note: "plan del submódulo; sin hallazgos" }
+      - { id: research-benchmark, path: modules/research/benchmark.md, audience: client, status: draft, freshness: current, evidence: none, verification: content-reviewed, note: "plan del submódulo; sin hallazgos" }
+      - { id: research-validacion, path: modules/research/validacion.md, audience: client, status: draft, freshness: current, evidence: none, verification: content-reviewed, note: "plan del submódulo; sin hallazgos" }
+      - { id: research-conclusiones, path: modules/research/conclusiones.md, audience: client, status: draft, freshness: current, evidence: none, verification: content-reviewed, note: "plan del submódulo; sin hallazgos" }
+  documentation:
+    path: modules/documentation
+    purpose: "Fuente detallada, spec/data-driven, legible por IA"
+    landing: modules/documentation/index.html   # lista de documentos (sale de las tablas de README.md) + búsqueda en el contenido
+    search: "client-side sobre todos los .md listados en README; sin tildes ni mayúsculas; ?q= en la URL; resalta coincidencias al abrir el documento"
+    canonical_source: "modules/documentation/**/*.md"
+    view_assets: modules/documentation/_view/
+    children:
+      - { id: research.encuadre, path: modules/documentation/research/encuadre.md, audience: internal, provider: fallback, status: draft, freshness: current, evidence: assumption, verification: content-reviewed }
+      - { id: research.roadmap, path: modules/documentation/research/roadmap.md, audience: internal, provider: fallback, status: draft, freshness: current, evidence: none, verification: content-reviewed }
+      - { id: research.modelo-de-publicos, path: modules/documentation/research/modelo-de-publicos.md, audience: internal, provider: fallback, status: review, freshness: current, evidence: assumption, verification: content-reviewed }
+      - { id: research.encuadre-v1, path: modules/documentation/research/archivo/encuadre-v1.md, audience: internal, status: superseded, freshness: stale, stale_reason: "Reemplazado por research.encuadre", evidence: observed }
+      - { id: proyecto.estilo-hub, path: modules/documentation/proyecto/estilo-hub.md, audience: internal, status: draft, freshness: current, evidence: observed }
+  retired_routes:
+    - "modules/research/?doc=… → reemplazado por modules/documentation/?doc=research/… (2026-10-26)"
+
+figma:
+  status: none
+  source: none
+  sync: not-required-yet
+
+design_system:
+  status: none
+  source: null

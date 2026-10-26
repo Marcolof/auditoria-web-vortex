@@ -1,0 +1,39 @@
+/* Tokens del UX Hub (portal de entregables), compartidos por el Hub y sus módulos documentales.
+   NO son tokens de la propuesta de diseño: un módulo de diseño futuro define los suyos. Origen en assets/ESTILO-HUB.md. */
+:root {
+  color-scheme: dark;
+
+  --vx-bg: #0d0918;
+  --vx-surface: #16111f;
+  --vx-surface-2: #1e1729;
+  --vx-border: rgba(255, 255, 255, .10);
+  --vx-border-strong: rgba(255, 255, 255, .18);
+
+  --vx-text: #ffffff;
+  --vx-text-2: #b3aebe;
+  --vx-text-3: #8c8798;
+
+  --vx-green: #a0d232;
+  --vx-green-soft: rgba(160, 210, 50, .12);
+  --vx-on-green: #000000;
+
+  --vx-violet: #a374f5;
+  --vx-violet-light: #c49eff;
+  --vx-violet-deep: #391f52;
+  --vx-violet-soft: rgba(163, 116, 245, .14);
+  --vx-glow: 0 0 38px 4px rgba(163, 116, 245, .18), 0 0 96px 26px rgba(132, 76, 222, .11);
+
+  --vx-danger: #ff9a9a;
+  --vx-danger-soft: rgba(255, 120, 120, .12);
+
+  --vx-radius: 6px;
+  --vx-radius-card: 12px;
+  --vx-font: "Rubik", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --vx-mono: ui-monospace, "Cascadia Code", Consolas, monospace;
+
+  /* Fondo con el gradiente radial violeta del hero de vortex-it.com */
+  --vx-backdrop:
+    radial-gradient(at 85% 58%, rgba(57, 31, 82, .28) 0, transparent 50%),
+    radial-gradient(at 8% 11%, rgba(57, 31, 82, .32) 0, transparent 50%),
+    radial-gradient(at 44% 0%, rgba(57, 31, 82, .30) 0, transparent 50%);
+}

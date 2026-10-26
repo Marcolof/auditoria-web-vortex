@@ -1,0 +1,61 @@
+{
+  "_nota": "Fuente de las tarjetas del módulo UX Research. Cada entrada abre <id>.md. Estado: para-revisar | en-curso | pendiente | aprobado.",
+  "modulos": [
+    {
+      "id": "plan",
+      "titulo": "Plan del research",
+      "descripcion": "Qué queremos saber, por qué y cómo lo vamos a averiguar.",
+      "estado": "para-revisar",
+      "icono": "<path d='M9 4h6M8 3h8a1 1 0 0 1 1 1v1h1a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1V4a1 1 0 0 1 1-1z'/><path d='M9 11l2 2 4-4M9 17h6'/>"
+    },
+    {
+      "id": "publicos",
+      "titulo": "Públicos y confianza",
+      "descripcion": "A quién le habla Vortex y qué necesita cada uno para confiar.",
+      "estado": "para-revisar",
+      "icono": "<circle cx='9' cy='8' r='3.2'/><path d='M3.5 19a5.5 5.5 0 0 1 11 0'/><circle cx='17' cy='9' r='2.5'/><path d='M15.5 14.2A4.5 4.5 0 0 1 21 18.5'/>"
+    },
+    {
+      "id": "negocio",
+      "titulo": "Negocio y clientes",
+      "descripcion": "Qué clientes tiene hoy Vortex y a cuáles quiere sumar.",
+      "estado": "pendiente",
+      "icono": "<rect x='3' y='7' width='18' height='13' rx='2'/><path d='M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18'/>"
+    },
+    {
+      "id": "auditoria-web",
+      "titulo": "Auditoría web",
+      "descripcion": "Cómo atiende hoy el sitio a cada público.",
+      "estado": "pendiente",
+      "icono": "<rect x='3' y='4' width='18' height='14' rx='2'/><path d='M3 8h18M8 21h8M12 18v3'/><circle cx='6' cy='6' r='.5'/>"
+    },
+    {
+      "id": "comunicacion",
+      "titulo": "Análisis de comunicación",
+      "descripcion": "Qué dicen las redes y a quién le hablan.",
+      "estado": "pendiente",
+      "icono": "<path d='M4 5h16v10H9l-5 4z'/><path d='M8 9h8M8 12h5'/>"
+    },
+    {
+      "id": "benchmark",
+      "titulo": "Benchmark",
+      "descripcion": "Cómo se posicionan otras empresas del sector.",
+      "estado": "pendiente",
+      "icono": "<path d='M4 20V10M10 20V4M16 20v-7M22 20H2'/>"
+    },
+    {
+      "id": "validacion",
+      "titulo": "Validación con clientes",
+      "descripcion": "Lo que dicen clientes y prospectos reales.",
+      "estado": "pendiente",
+      "icono": "<path d='M12 3a3 3 0 0 1 3 3v5a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3z'/><path d='M5 11a7 7 0 0 0 14 0M12 18v3'/>"
+    },
+    {
+      "id": "conclusiones",
+      "titulo": "Hallazgos y recomendaciones",
+      "descripcion": "Qué aprendimos y qué conviene hacer primero.",
+      "estado": "pendiente",
+      "icono": "<path d='M9 18h6M10 21h4'/><path d='M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z'/>"
+    }
+  ]
+}

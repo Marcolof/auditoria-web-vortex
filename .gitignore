@@ -1,0 +1,15 @@
+# Vercel
+.vercel/
+
+# Variables de entorno (nunca versionar valores reales)
+.env
+.env.*
+!.env.example
+
+# Configuración local de Claude Code
+.claude/settings.local.json
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,106 @@
+/* Estilos propios del módulo UX Research (scope body.rs). Lectura ejecutiva: poco texto, mucho aire. */
+body.rs {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--vx-backdrop), var(--vx-bg);
+  background-attachment: fixed;
+  color: var(--vx-text);
+  font-family: var(--vx-font);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+.rs *, .rs *::before, .rs *::after { box-sizing: border-box; }
+.rs a:focus-visible, .rs-main:focus-visible { outline: 2px solid var(--vx-green); outline-offset: 3px; border-radius: 2px; }
+
+.rs-skip { position: absolute; left: -9999px; }
+.rs-skip:focus { left: 16px; top: 8px; z-index: 10; background: var(--vx-green); color: var(--vx-on-green); padding: 8px 12px; border-radius: var(--vx-radius); }
+
+/* Barra superior */
+.rs-topbar {
+  position: sticky; top: 0; z-index: 5;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  padding: 12px 24px;
+  background: rgba(13, 9, 24, .85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--vx-border);
+}
+.rs-crumbs { display: flex; align-items: center; gap: 10px; }
+.rs-back {
+  display: inline-flex; align-items: center; gap: 4px;
+  padding: 6px 12px 6px 8px;
+  border: 1px solid var(--vx-green); border-radius: var(--vx-radius);
+  color: var(--vx-green); text-decoration: none;
+  font-size: 12px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase;
+}
+.rs-back:hover { background: var(--vx-green); color: var(--vx-on-green); }
+.rs-sep { color: var(--vx-text-3); }
+.rs-crumb { color: var(--vx-text-2); text-decoration: none; font-size: 12px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; }
+.rs-crumb:hover { color: var(--vx-text); }
+.rs-module { display: inline-flex; align-items: center; gap: 12px; font-size: 12px; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; color: var(--vx-text-2); }
+
+.rs-logo { width: auto; height: 14px; }
+
+/* Landing */
+.rs-main { max-width: 1040px; margin: 0 auto; padding: 56px 16px 80px; }
+.rs-head { margin-bottom: 40px; }
+.rs-eyebrow { margin: 0 0 12px; font-size: 12px; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; color: var(--vx-green); }
+.rs-title { margin: 0; font-size: clamp(30px, 6vw, 44px); font-weight: 500; letter-spacing: .02em; text-transform: uppercase; line-height: 1.1; }
+.rs-lead { margin: 14px 0 0; max-width: 560px; font-size: 17px; color: var(--vx-text-2); }
+
+.rs-grid {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px;
+}
+.rs-card {
+  display: grid; grid-template-columns: auto 1fr; gap: 16px;
+  height: 100%; padding: 24px;
+  border: 1px solid var(--vx-border); border-radius: var(--vx-radius-card);
+  background: linear-gradient(160deg, var(--vx-surface-2), var(--vx-surface));
+  color: inherit; text-decoration: none;
+  transition: border-color .2s, box-shadow .2s, transform .2s;
+}
+.rs-card:hover { border-color: rgba(163, 116, 245, .5); box-shadow: var(--vx-glow); transform: translateY(-2px); }
+.rs-card:focus-visible { outline-offset: 4px; }
+.rs-card.is-pending { background: var(--vx-surface); }
+.rs-card.is-pending .rs-card-icon { background: rgba(255, 255, 255, .05); color: var(--vx-text-2); }
+.rs-card-icon {
+  width: 44px; height: 44px; display: grid; place-items: center;
+  border-radius: var(--vx-radius);
+  background: var(--vx-violet-soft); color: var(--vx-violet-light);
+}
+.rs-card-body { display: flex; flex-direction: column; gap: 4px; }
+.rs-card-title { font-size: 16px; font-weight: 500; letter-spacing: .05em; text-transform: uppercase; }
+.rs-card-desc { font-size: 15px; color: var(--vx-text-2); }
+.rs-card .md-badge { grid-column: 1 / -1; justify-self: start; }
+
+/* Contenido de un módulo */
+.rs-main.is-doc { max-width: 820px; padding-top: 40px; }
+.rs-doc-status { margin-bottom: 16px; }
+.rs-doc h1 { font-size: clamp(28px, 5vw, 40px); }
+.rs-doc > blockquote:first-of-type {
+  margin: 0 0 32px; padding: 20px 24px;
+  border-left-color: var(--vx-green);
+  background: var(--vx-green-soft);
+}
+.rs-doc > blockquote:first-of-type p { font-size: 19px; line-height: 1.5; color: var(--vx-text); }
+.rs-doc p, .rs-doc li { font-size: 17px; }
+.rs-doc-back { display: inline-block; margin-top: 40px; color: var(--vx-green); font-weight: 500; text-decoration: none; }
+.rs-doc-back:hover { text-decoration: underline; }
+
+.rs-loading { color: var(--vx-text-3); }
+
+@media (max-width: 640px) {
+  .rs-main { padding: 32px 16px 64px; }
+  .rs-topbar { padding: 10px 16px; }
+  .rs-module { font-size: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rs-card { transition: none; }
+  .rs-card:hover { transform: none; }
+}
+
+@media print {
+  body.rs { background: #fff; color: #000; }
+  .rs-topbar, .rs-skip, .rs-doc-back { display: none; }
+}
