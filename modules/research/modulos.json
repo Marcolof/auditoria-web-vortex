@@ -2,6 +2,13 @@
   "_nota": "Fuente de las tarjetas del módulo UX Research. Cada entrada abre <id>.md. Estado: para-revisar | en-curso | pendiente | aprobado.",
   "modulos": [
     {
+      "id": "estado",
+      "titulo": "Estado del research",
+      "descripcion": "Dónde estamos, qué está listo y qué falta.",
+      "estado": "en-curso",
+      "icono": "<path d='M3 12h4l3-8 4 16 3-8h4'/>"
+    },
+    {
       "id": "plan",
       "titulo": "Plan del research",
       "descripcion": "Qué queremos saber, por qué y cómo lo vamos a averiguar.",
@@ -25,16 +32,30 @@
     {
       "id": "auditoria-web",
       "titulo": "Auditoría web",
-      "descripcion": "Cómo atiende hoy el sitio a cada público.",
-      "estado": "pendiente",
+      "descripcion": "Cómo atiende hoy el sitio a cada público: lo que funciona y lo que falta.",
+      "estado": "para-revisar",
       "icono": "<rect x='3' y='4' width='18' height='14' rx='2'/><path d='M3 8h18M8 21h8M12 18v3'/><circle cx='6' cy='6' r='.5'/>"
+    },
+    {
+      "id": "visual-usabilidad",
+      "titulo": "Visual y usabilidad simulada",
+      "descripcion": "Cómo se ve el sitio y dónde se traba cada perfil, simulado con IA.",
+      "estado": "para-revisar",
+      "icono": "<path d='M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z'/><circle cx='12' cy='12' r='3'/>"
     },
     {
       "id": "comunicacion",
       "titulo": "Análisis de comunicación",
-      "descripcion": "Qué dicen las redes y a quién le hablan.",
-      "estado": "pendiente",
+      "descripcion": "Qué dicen las redes y la web externa, y si cuentan lo mismo.",
+      "estado": "para-revisar",
       "icono": "<path d='M4 5h16v10H9l-5 4z'/><path d='M8 9h8M8 12h5'/>"
+    },
+    {
+      "id": "contenido-web",
+      "titulo": "Qué mostrar en la web",
+      "descripcion": "Qué necesita ver cada público y en qué orden.",
+      "estado": "para-revisar",
+      "icono": "<rect x='3' y='4' width='18' height='16' rx='2'/><path d='M3 9h18M9 9v11'/><path d='M12 13h6M12 16h4'/>"
     },
     {
       "id": "benchmark",
@@ -53,8 +74,8 @@
     {
       "id": "conclusiones",
       "titulo": "Hallazgos y recomendaciones",
-      "descripcion": "Qué aprendimos y qué conviene hacer primero.",
-      "estado": "pendiente",
+      "descripcion": "Qué mejorar en la web y en qué orden (versión preliminar).",
+      "estado": "para-revisar",
       "icono": "<path d='M9 18h6M10 21h4'/><path d='M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z'/>"
     }
   ]

@@ -8,7 +8,7 @@ project:
 
 ux:
   primary: research
-  secondary: [audit]          # auditoría de imagen/presencia, dirigida por el research
+  secondary: [audit, redesign]   # redesign: siguiente escenario sugerido, todavía no iniciado          # auditoría de imagen/presencia, dirigida por el research
   continuity: new
   surface: web                # web + redes (Instagram, LinkedIn, YouTube)
   client_decision: prioritize # a qué audiencias y canales priorizar
@@ -18,13 +18,16 @@ origin:
   mode: from-scratch          # carpeta vacía; fuentes públicas como evidencia
 
 strategy:
-  current_focus: "Paso 0 del research: modelo general de públicos y confianza, construido sin partir de la web actual. Documentar el roadmap completo."
+  current_focus: "Qué debería mostrar la web de Vortex para cada público (contenido, no diseño), apoyado en el modelo de públicos, la auditoría web y el análisis de comunicación."
   intervention: not-applicable
   additional_scope: []
   recommended_next:
     - "Cerrar paso 0: revisión del modelo de públicos con dirección, comercial y marketing"
     - "Relevar qué datos internos existen (CRM, analítica, métricas de redes)"
-    - "Opcional en paralelo: pasos 3 (auditoría de presencia) y 4 (benchmark)"
+    - "Paso 3 hecho en borrador (auditoría web + análisis de comunicación); falta la prueba con asistentes de IA"
+    - "Plan de mejoras preliminar (14 mejoras, 3 etapas); revisar con Vortex y tomar las 6 decisiones pedidas"
+    - "Paso 4 benchmark: requiere lista de competidores"
+    - "Revisar hallazgos de la auditoría con Vortex"
   deferred:
     - "Módulo de propuesta de diseño en el Hub: se agrega cuando exista (sin tarjeta 'próximamente')"
 
@@ -38,6 +41,13 @@ knowledge:
     - "Quiénes participan en entrevistas internas"
     - "Objetivo comercial prioritario (industria, país, servicio o plataforma)"
     - "Competidores de referencia"
+    - "Foco sectorial real (banca/retail/fintech en metadatos vs contenido visible)"
+    - "Qué casos de clientes se pueden mostrar"
+    - "Rol de plataformas y blog frente al mensaje principal"
+    - "Existencia de documentación legal y de privacidad"
+    - "Ficha oficial de Vortex: cifras de personal, líneas de servicio (4 en la web, 5 en LinkedIn), sectores y sedes"
+    - "Métricas de LinkedIn, Instagram y YouTube"
+    - "Respuestas de asistentes de IA (prueba manual, ver análisis de comunicación, sección 7)"
   superseded:
     - item: "Encuadre v1 basado en la web e Instagram actuales (00-encuadre-y-plan.md)"
       replaced_by: "01-encuadre.md: modelo general de públicos primero, la web como objeto de evaluación"
@@ -95,6 +105,30 @@ decisions:
   - decision: "Hub publicado con X-Robots-Tag noindex (no indexable por buscadores)"
     basis: recommended-default
     date: "2026-10-26"
+  - decision: "Auditoría web como revisión experta (heurísticas de Nielsen, dimensiones de confianza y necesidades comunes del modelo de públicos), severidad 0–4, sin usuarios reales; hallazgos sin nombres de personas"
+    basis: recommended-default
+    date: "2026-10-26"
+  - decision: "Análisis de comunicación sobre perfiles públicos (LinkedIn, YouTube, Instagram) y búsqueda web; asistentes de IA de consumo quedan como prueba manual pendiente; sin nombres de personas en los entregables"
+    basis: recommended-default
+    date: "2026-10-26"
+  - decision: "Foco del research en la web: qué debería mostrar para cada público. Entregable de contenido (hipótesis), no de diseño; las opciones de mensaje se arman sólo con lo que Vortex ya dice y se prueban en el paso 6"
+    basis: user
+    date: "2026-10-26"
+  - decision: "Reporte de mejoras de la web: 14 mejoras en tres etapas que cubren los 17 hallazgos (3 mayores, 12 menores, 2 cosméticos); preliminar hasta validar con personas (paso 6)"
+    basis: user
+    date: "2026-10-26"
+  - decision: "Análisis visual y prueba de usabilidad simulada hechos por IA (Claude) sobre el sitio publicado: hipótesis, no evidencia de usuarios; las 9 tareas se reutilizan en el test real"
+    basis: user
+    date: "2026-10-26"
+  - decision: "Plan de mejoras actualizado a 26 hallazgos y 16 mejoras (suma V1–V6 y U1–U3); H10 anotado como no reproducido"
+    basis: recommended-default
+    date: "2026-10-26"
+  - decision: "Valoración subjetiva del atractivo agregada al análisis visual (puntaje 1–5 por dimensión, opinión del revisor IA) con medición de imágenes y scroll; suma V7–V9 y M17 al plan (29 hallazgos, 17 mejoras)"
+    basis: user
+    date: "2026-10-26"
+  - decision: "Submódulo 'Estado del research' como primera tarjeta de Research; Plan del research remite a él para no duplicar el avance"
+    basis: user
+    date: "2026-10-26"
 
 sources:
   - id: web
@@ -107,6 +141,18 @@ sources:
     type: social
     reviewed_at: "2026-10-26"
     scope: "texto del reel (sin sesión)"
+  - id: web-audit-snapshot
+    url: "https://vortex-it.com/"
+    type: public-website
+    reviewed_at: "2026-10-26"
+    scope: "9 páginas ES/EN: inicio, soluciones, cómo trabajamos, sobre, plataformas, blog, hablemos, trabajá con nosotros, /en/; metadatos, hreflang, robots.txt, sitemap.xml; hero en mobile emulado"
+    not_covered: "LinkedIn, YouTube, Instagram, sitios de plataformas, teclado, lectores de pantalla, dispositivos reales, analítica"
+  - id: comms-snapshot
+    type: public-channels
+    reviewed_at: "2026-10-26"
+    urls: ["https://www.linkedin.com/company/vortex-it-ok", "https://www.youtube.com/@vortexit", "https://www.instagram.com/vortex.it/"]
+    scope: "página de empresa de LinkedIn (7 ítems recientes), canal de YouTube (17 videos), perfil de Instagram (sin sesión), 3 búsquedas web"
+    not_covered: "métricas, contenido de Instagram, historial de LinkedIn, asistentes de IA de consumo"
   - id: logo
     url: "https://vortex-it.com/assets/Logo%20VX_blanco%20y%20violeta.svg"
     type: brand-asset
@@ -165,14 +211,17 @@ modules:
     manifest: modules/research/modulos.json   # fuente de tarjetas y estados de submódulos
     view_assets: modules/research/_view/
     children:
+      - { id: research-estado, path: modules/research/estado.md, audience: client, status: review, freshness: current, evidence: observed, verification: content-reviewed, depends_on: [research-conclusiones, research.roadmap], note: "resumen de estado; actualizar con cada avance" }
       - { id: research-plan, path: modules/research/plan.md, audience: client, status: review, freshness: current, evidence: assumption, verification: content-reviewed, depends_on: [research.encuadre, research.roadmap] }
       - { id: research-publicos, path: modules/research/publicos.md, audience: client, status: review, freshness: current, evidence: assumption, verification: content-reviewed, depends_on: [research.modelo-de-publicos] }
       - { id: research-negocio, path: modules/research/negocio.md, audience: client, status: draft, freshness: current, evidence: none, verification: content-reviewed, note: "plan del submódulo; sin hallazgos" }
-      - { id: research-auditoria-web, path: modules/research/auditoria-web.md, audience: client, status: draft, freshness: current, evidence: none, verification: content-reviewed, note: "plan del submódulo; sin hallazgos" }
-      - { id: research-comunicacion, path: modules/research/comunicacion.md, audience: client, status: draft, freshness: current, evidence: none, verification: content-reviewed, note: "plan del submódulo; sin hallazgos" }
+      - { id: research-auditoria-web, path: modules/research/auditoria-web.md, audience: client, status: review, freshness: current, evidence: observed, verification: content-reviewed, depends_on: [research.auditoria-web], note: "revisión experta sin usuarios; alcance sólo vortex-it.com" }
+      - { id: research-visual-usabilidad, path: modules/research/visual-usabilidad.md, audience: client, status: review, freshness: current, evidence: assumption, verification: content-reviewed, depends_on: [research.analisis-visual, research.usabilidad-simulada], note: "revisión visual y usabilidad simuladas por IA; sin personas" }
+      - { id: research-comunicacion, path: modules/research/comunicacion.md, audience: client, status: review, freshness: current, evidence: observed, verification: content-reviewed, depends_on: [research.analisis-comunicacion], note: "perfiles públicos sin sesión; sin métricas; asistentes de IA no consultados" }
+      - { id: research-contenido-web, path: modules/research/contenido-web.md, audience: client, status: review, freshness: current, evidence: assumption, verification: content-reviewed, depends_on: [research.web-que-mostrar], note: "propuesta de contenido; hipótesis; sin diseño ni textos finales" }
       - { id: research-benchmark, path: modules/research/benchmark.md, audience: client, status: draft, freshness: current, evidence: none, verification: content-reviewed, note: "plan del submódulo; sin hallazgos" }
       - { id: research-validacion, path: modules/research/validacion.md, audience: client, status: draft, freshness: current, evidence: none, verification: content-reviewed, note: "plan del submódulo; sin hallazgos" }
-      - { id: research-conclusiones, path: modules/research/conclusiones.md, audience: client, status: draft, freshness: current, evidence: none, verification: content-reviewed, note: "plan del submódulo; sin hallazgos" }
+      - { id: research-conclusiones, path: modules/research/conclusiones.md, audience: client, status: review, freshness: current, evidence: observed, verification: content-reviewed, depends_on: [research.plan-de-mejoras-web], note: "versión preliminar: hallazgos observados; prioridad, impacto y esfuerzo son juicio experto, sin validar con usuarios" }
   documentation:
     path: modules/documentation
     purpose: "Fuente detallada, spec/data-driven, legible por IA"
@@ -185,6 +234,12 @@ modules:
       - { id: research.roadmap, path: modules/documentation/research/roadmap.md, audience: internal, provider: fallback, status: draft, freshness: current, evidence: none, verification: content-reviewed }
       - { id: research.modelo-de-publicos, path: modules/documentation/research/modelo-de-publicos.md, audience: internal, provider: fallback, status: review, freshness: current, evidence: assumption, verification: content-reviewed }
       - { id: research.encuadre-v1, path: modules/documentation/research/archivo/encuadre-v1.md, audience: internal, status: superseded, freshness: stale, stale_reason: "Reemplazado por research.encuadre", evidence: observed }
+      - { id: research.auditoria-web, path: modules/documentation/research/auditoria-web.md, audience: internal, provider: fallback, status: draft, freshness: current, evidence: observed, verification: content-reviewed, depends_on: [research.modelo-de-publicos] }
+      - { id: research.analisis-comunicacion, path: modules/documentation/research/analisis-comunicacion.md, audience: internal, provider: fallback, status: draft, freshness: current, evidence: observed, verification: content-reviewed, depends_on: [research.modelo-de-publicos, research.auditoria-web] }
+      - { id: research.web-que-mostrar, path: modules/documentation/research/web-que-mostrar.md, audience: internal, provider: fallback, status: draft, freshness: current, evidence: assumption, verification: content-reviewed, depends_on: [research.modelo-de-publicos, research.auditoria-web, research.analisis-comunicacion] }
+      - { id: research.plan-de-mejoras-web, path: modules/documentation/research/plan-de-mejoras-web.md, audience: internal, provider: fallback, status: draft, freshness: current, evidence: observed, verification: content-reviewed, depends_on: [research.auditoria-web, research.analisis-comunicacion, research.web-que-mostrar] }
+      - { id: research.analisis-visual, path: modules/documentation/research/analisis-visual.md, audience: internal, provider: fallback, status: draft, freshness: current, evidence: observed, verification: content-reviewed, depends_on: [research.auditoria-web] }
+      - { id: research.usabilidad-simulada, path: modules/documentation/research/usabilidad-simulada.md, audience: internal, provider: fallback, status: draft, freshness: current, evidence: assumption, verification: content-reviewed, depends_on: [research.modelo-de-publicos, research.auditoria-web], note: "simulación con IA; no es evidencia de usuarios; tareas reutilizables en el paso 6" }
       - { id: proyecto.estilo-hub, path: modules/documentation/proyecto/estilo-hub.md, audience: internal, status: draft, freshness: current, evidence: observed }
   retired_routes:
     - "modules/research/?doc=… → reemplazado por modules/documentation/?doc=research/… (2026-10-26)"

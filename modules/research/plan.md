@@ -25,7 +25,7 @@ El objetivo principal es **conseguir clientes nuevos**, pero también tenemos en
 
 ## Dónde estamos
 
-Terminamos el **mapa de públicos** y está listo para revisar con el equipo. Es el punto de partida: todavía son hipótesis, no conclusiones.
+El avance, lo que está listo y lo que falta se resumen en [Estado del research](?m=estado).
 
 ## Qué necesitamos de Vortex
 

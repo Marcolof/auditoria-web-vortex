@@ -28,12 +28,12 @@ feeds: [research/plan]
 | 0 | Modelo de públicos | ¿Qué públicos atiende una web IT B2B y qué necesitan para confiar? | [Modelo de públicos y confianza](modelo-de-publicos.md) | **En revisión** |
 | 1 | Conocimiento interno | ¿Qué sabe Vortex de sus clientes y a quién quiere captar? | Mapa de supuestos internos | Pendiente |
 | 2 | Datos existentes | ¿Qué dicen los datos sobre cartera, leads y canales? | Segmentación con datos | Pendiente |
-| 3 | Auditoría de presencia | ¿Cómo atienden hoy la web y las redes a cada público? | Auditoría web y análisis de comunicación | Pendiente |
+| 3 | Auditoría de presencia | ¿Cómo atienden hoy la web y las redes a cada público? | [Auditoría web](auditoria-web.md), [análisis visual](analisis-visual.md) y [análisis de comunicación](analisis-comunicacion.md) | Borrador; falta la prueba con asistentes de IA y las métricas internas |
 | 4 | Benchmark | ¿Cómo se posicionan los competidores? | Mapa de posicionamiento | Pendiente |
-| 5 | Priorización e ICP | ¿A quién le hablamos primero? | Públicos priorizados, ICP y proto-personas (hipótesis) | Pendiente |
-| 6 | Validación externa | ¿Lo que suponemos coincide con lo que dicen los públicos reales? | Evidencia de entrevistas y test | Pendiente |
+| 5 | Priorización e ICP | ¿A quién le hablamos primero? | Públicos priorizados, ICP y proto-personas (hipótesis) | Pendiente; adelanto en [qué debería mostrar la web](web-que-mostrar.md) |
+| 6 | Validación externa | ¿Lo que suponemos coincide con lo que dicen los públicos reales? | Evidencia de entrevistas y test | Pendiente; tareas preparadas y [simuladas con IA](usabilidad-simulada.md) |
 | 7 | Síntesis | ¿Qué aprendimos con evidencia? | Personas, journeys, mapa público–confianza–canal | Pendiente |
-| 8 | Recomendaciones | ¿Qué hacemos con esto? | Criterios y prioridades para la siguiente etapa | Pendiente |
+| 8 | Recomendaciones | ¿Qué hacemos con esto? | Criterios y prioridades para la siguiente etapa | Borrador preliminar: [plan de mejoras](plan-de-mejoras-web.md) |
 
 Los pasos 3 y 4 pueden correr en paralelo con el 1 y el 2. Los demás dependen del anterior.
 
@@ -213,10 +213,12 @@ Esta documentación es la fuente detallada. El módulo **UX Research** del Hub m
 | Plan del research | 0–8 | [encuadre.md](encuadre.md), este roadmap |
 | Públicos y confianza | 0, 5 | [modelo-de-publicos.md](modelo-de-publicos.md) |
 | Negocio y clientes | 1, 2 | Pendiente |
-| Auditoría web | 3 | Pendiente |
-| Análisis de comunicación | 3 | Pendiente |
+| Auditoría web | 3 | [auditoria-web.md](auditoria-web.md) |
+| Visual y usabilidad simulada | 3, 6 (simulado) | [analisis-visual.md](analisis-visual.md), [usabilidad-simulada.md](usabilidad-simulada.md) |
+| Análisis de comunicación | 3 | [analisis-comunicacion.md](analisis-comunicacion.md) |
+| Qué mostrar en la web | 0, 3, 5, 8 | [web-que-mostrar.md](web-que-mostrar.md) (preliminar, a validar en el paso 6) |
 | Benchmark | 4 | Pendiente |
 | Validación con clientes | 6 | Pendiente |
-| Hallazgos y recomendaciones | 7, 8 | Pendiente |
+| Hallazgos y recomendaciones | 7, 8 | [plan-de-mejoras-web.md](plan-de-mejoras-web.md) (preliminar; la versión final sale después del paso 6) |
 
 Cuando un paso produce contenido nuevo, primero se documenta acá y después se resume en el módulo correspondiente de UX Research.

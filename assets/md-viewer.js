@@ -12,6 +12,10 @@
     [/^borrador|^draft/i, 'draft'],
     [/^pendiente/i, 'pending'],
     [/^aprobado|^cerrado|^listo|^approved/i, 'done'],
+    // Resultados de tareas de usabilidad
+    [/^éxito$/i, 'done'],
+    [/^parcial$/i, 'progress'],
+    [/^fallo$/i, 'superseded'],
   ];
 
   function statusKind(text) {

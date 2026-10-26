@@ -14,6 +14,10 @@
 
 Entrevistas con 6 a 10 clientes, oportunidades perdidas y prospectos, y una prueba de primera impresión de la web.
 
+## Ya preparado
+
+Las nueve tareas del test ya están escritas y se probaron en una [simulación con IA](?m=visual-usabilidad). Falta hacerlas con personas reales.
+
 ## Qué necesitamos
 
 - Contactos de clientes y prospectos dispuestos a participar.
