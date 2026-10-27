@@ -179,7 +179,7 @@ delivery:
   local_status: local-verified
   repository: "https://github.com/Marcolof/auditoria-web-vortex"
   repository_visibility: public
-  repository_status: local-changes   # último push af0ca82/43c117a en main (2026-10-26); auditoría UI del 2026-10-27 sin subir
+  repository_status: pushed   # último commit de contenido 60fcbf6 (auditoría UI) en main, 2026-10-27
   branch: main
   deploy_target: vercel        # proyecto Vercel a crear por el usuario e importar desde el repo
   deploy_config: "vercel.json + .vercelignore; estático, sin build ni variables de entorno"
