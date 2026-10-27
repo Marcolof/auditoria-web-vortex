@@ -76,4 +76,4 @@ Se comparan con un test de cinco segundos: ¿la persona puede decir qué hace Vo
 
 ---
 
-Propuesta completa, con la plantilla de caso, el siguiente paso por público y cómo se valida, en Documentación: [qué debería mostrar la web](../documentation/?doc=research/web-que-mostrar.md). Basada en la [auditoría web](?m=auditoria-web) y el [análisis de comunicación](?m=comunicacion).
+Propuesta completa, con la plantilla de caso, el siguiente paso por público y cómo se valida, en Documentación: [qué debería mostrar la web](../documentation/?doc=research/web-que-mostrar.md). Basada en la [auditoría web](?m=auditoria-web) y el [análisis de comunicación](?m=comunicacion). Cómo se ve hoy el sitio está en [diseño visual y UI](?m=visual-ui).

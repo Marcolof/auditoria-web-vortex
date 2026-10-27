@@ -99,6 +99,7 @@ El problema principal no es un canal en particular, sino que **los canales no cu
 | Criterio | Necesidad común n.º 3 del modelo (coherencia entre canales); dimensión **integridad** (decir lo mismo en todos lados) |
 | Interpretación | Quien contrata suele cruzar varias fuentes antes de contactar. Las diferencias no son errores graves por sí solas (LinkedIn cuenta personas vinculadas, no empleados), pero sin una versión oficial no se puede saber cuál es la correcta. Para los asistentes de IA, que resumen varias fuentes, el resultado es una descripción borrosa |
 | Evidencia | Texto de cada canal, 2026-10-26 |
+| Dentro del sitio | Sumado el 2026-10-27 desde la [auditoría web](auditoria-web.md) (antes H3). En la propia web, la descripción para buscadores dice "Acompañamos a empresas de banca, retail y fintech…", pero el contenido visible no nombra ninguna industria; los logos de clientes sí corresponden a banca, fintech, retail y consumo masivo. No se sabe cuál refleja el foco comercial real (pregunta abierta para el paso 1) |
 | Severidad | 3: afecta a todos los públicos y se repite en cada canal |
 | Recomendación | Definir una ficha oficial con descripción corta y larga, líneas de servicio, cifras con fecha, sectores y sedes, y alinear los canales a ella |
 | Tipo | Contenido |

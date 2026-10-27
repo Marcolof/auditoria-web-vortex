@@ -1,6 +1,6 @@
 # Validación con clientes
 
-> **En una frase:** Lo que dicen personas reales de los públicos prioritarios: si lo que suponemos es cierto.
+> **En una frase:** lo que dicen personas reales de los públicos prioritarios: si lo que suponemos es cierto.
 
 **Estado:** todavía no empezó.
 
@@ -12,7 +12,7 @@
 
 ## Cómo
 
-Entrevistas con 6 a 10 clientes, oportunidades perdidas y prospectos, y una prueba de primera impresión de la web.
+Entrevistas con 6 a 10 clientes, oportunidades perdidas y prospectos; una prueba de primera impresión de la web; y un test de uso con 5 a 8 personas de los perfiles prioritarios.
 
 ## Ya preparado
 

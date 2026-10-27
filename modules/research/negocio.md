@@ -1,6 +1,6 @@
 # Negocio y clientes
 
-> **En una frase:** Qué clientes tiene hoy Vortex, cómo llegaron y a cuáles conviene salir a buscar.
+> **En una frase:** qué clientes tiene hoy Vortex, cómo llegaron y a cuáles conviene salir a buscar.
 
 **Estado:** todavía no empezó.
 

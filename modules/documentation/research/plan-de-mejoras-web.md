@@ -11,11 +11,11 @@ sources: [vortex-it.com snapshot 2026-10-26, linkedin.com/company/vortex-it-ok 2
 
 # Plan de mejoras de la web y su presencia
 
-> **Versión preliminar.** Reúne los 39 hallazgos de la [auditoría web](auditoria-web.md) (H1 a H12), el [análisis de comunicación](analisis-comunicacion.md) (C1 a C5), el [análisis visual](analisis-visual.md) (V1 a V9, incluida la valoración subjetiva), la [prueba de usabilidad simulada](usabilidad-simulada.md) (U1 a U3) y la [auditoría UI](auditoria-ui.md) (UI1 a UI10) en mejoras ordenadas. **Los hallazgos son observaciones del sitio y de los canales al 2026-10-26 (la auditoría UI, al 2026-10-27). La prioridad, el impacto y el esfuerzo son juicio de quien audita**, no resultados de usuarios ni estimaciones del equipo de Vortex. La versión final se ajusta después de la validación con clientes (paso 6).
+> **Versión preliminar.** Reúne los 28 hallazgos vigentes de la [auditoría web](auditoria-web.md) (H), el [análisis de comunicación](analisis-comunicacion.md) (C), el [análisis visual](analisis-visual.md) (V, incluida la valoración subjetiva), la [auditoría UI](auditoria-ui.md) (UI) y la [prueba de usabilidad simulada](usabilidad-simulada.md) (U) en mejoras ordenadas. Los que se superponían se fusionaron y los no confirmados pasaron a dudas a verificar ([sección 4](#4-hallazgos-y-su-mejora)). **Los hallazgos son observaciones del sitio y de los canales al 2026-10-26 (la auditoría UI, al 2026-10-27). La prioridad, el impacto y el esfuerzo son juicio de quien audita**, no resultados de usuarios ni estimaciones del equipo de Vortex. La versión final se ajusta después de la validación con clientes (paso 6).
 
 ## 1. Resumen
 
-De los 39 hallazgos, **3 son de severidad mayor, 22 menores y 14 cosméticos**. Ninguno es crítico: el sitio funciona y tiene una base sólida (método claro, servicios explicados desde el problema del cliente, sitio bilingüe, equipo visible). Lo que le falta es lo que hace confiar a quien contrata:
+De los 28 hallazgos, **3 son de severidad mayor, 19 menores y 6 cosméticos**. Ninguno es crítico: el sitio funciona y tiene una base sólida (método claro, servicios explicados desde el problema del cliente, sitio bilingüe, equipo visible). Lo que le falta es lo que hace confiar a quien contrata:
 
 1. **Decir con claridad qué hace Vortex y para quién**, de la misma forma en todos los canales (H1, H3, C1).
 2. **Mostrar resultados reales**: casos de clientes (H2).
@@ -38,12 +38,12 @@ Las mejoras se agrupan en **tres etapas**. La primera es barata y casi toda depe
 
 | ID | Mejora | Hallazgos | Impacto | Esfuerzo | Depende de | Momento |
 |---|---|---|---|---|---|---|
-| **M1** | **Ficha oficial de Vortex** y alinear todos los canales: descripción corta y larga, líneas de servicio (cuatro o cinco), cifras con fecha, sectores y sedes | C1, H3 | Alto | Bajo | Decisiones de la dirección | Ya |
+| **M1** | **Ficha oficial de Vortex** y alinear todos los canales: descripción corta y larga, líneas de servicio (cuatro o cinco), cifras con fecha, sectores y sedes | C1 | Alto | Bajo | Decisiones de la dirección | Ya |
 | **M2** | **Reformular la primera pantalla** para que diga qué se resuelve y para quién. Probar las opciones A, B y C del [documento de contenido](web-que-mostrar.md) | H1 | Alto | Bajo | M1 (y confirmar el foco sectorial para la opción B) | Elegir ahora; confirmar tras el test (paso 6) |
 | **M3** | **Alinear los botones con su destino:** "Agendar una llamada" lleva a un formulario, y las cuatro plataformas llevan a destinos distintos | H4, H5 | Medio | Bajo | Decisión de qué prometer | Ya |
-| **M4** | **Arreglos técnicos:** `h1` en la home y en Sobre Vortex; niveles de encabezado según el contenido; metadatos sociales; `canonical`; sitemap y robots; datos estructurados de organización | H7, H8, UI7 | Medio | Bajo | Equipo técnico del sitio | Ya |
-| **M5** | **Verificar dos dudas:** el hero en mobile con dispositivos reales (no se reprodujo en una segunda prueba) y el bloque "Platforms" repetido en inglés | H10, H12 | Bajo | Bajo | Un dispositivo real y la versión en pantalla | Ya |
-| **M15** | **Legibilidad, accesibilidad y pulido visual:** contraste del pie, escala tipográfica más corta con mínimo de 14 px para lectura, áreas táctiles de 44 × 44 px, botón flotante que no tape contenido, estado del menú, logos con tamaño visual parejo, foco visible con teclado en enlaces, botones y campos | V2, V3, V5, V6, V9, UI3, UI6 | Medio | Bajo | Equipo técnico del sitio | Ya |
+| **M4** | **Arreglos técnicos:** `h1` en la home y en Sobre Vortex; niveles de encabezado según el contenido; metadatos sociales; `canonical`; sitemap y robots; datos estructurados de organización | H7, H8 | Medio | Bajo | Equipo técnico del sitio | Ya |
+| **M5** | **Verificar dos dudas:** el hero en mobile con dispositivos reales (no se reprodujo en una segunda prueba) y el bloque "Platforms" repetido en inglés | Dudas H10 y H12 | Bajo | Bajo | Un dispositivo real y la versión en pantalla | Ya |
+| **M15** | **Legibilidad, accesibilidad y pulido visual:** contraste del pie, escala tipográfica más corta con mínimo de 14 px para lectura, áreas táctiles de 44 × 44 px, botón flotante que no tape contenido, estado del menú, logos con tamaño visual parejo, foco visible con teclado en enlaces, botones y campos | V3, V5, V6, V9, UI3, UI6 | Medio | Bajo | Equipo técnico del sitio | Ya |
 | **M17** | **Optimizar imágenes:** exportar a unas 2 veces el tamaño mostrado, versiones por pantalla y carga diferida de lo que está más abajo | V7 | Medio | Bajo | Equipo técnico del sitio | Ya |
 
 ### Etapa 2 · Pruebas de confianza
@@ -64,52 +64,58 @@ Las mejoras se agrupan en **tres etapas**. La primera es barata y casi toda depe
 | **M11** | **El blog en el sitio:** publicar los artículos en vortex-it.com, o llevar cada uno a un siguiente paso | H6 | Medio | Medio | Quién escribe y gestiona | Después del paso 1 |
 | **M12** | **LinkedIn, Instagram y YouTube:** definir el papel de cada canal y para quién es; actualizar la descripción de YouTube; llevar el enlace de Instagram al sitio | C2, C3, C4 | Medio | Bajo a medio | M1 y las métricas de cada canal | Descripciones: ya. Línea editorial: después del paso 2 |
 | **M13** | **Presencia externa:** hacer la prueba con asistentes de IA y actualizar fichas y notas de prensa que describen a la Vortex de hace años | C5 | Medio | Medio | M1 | La prueba, ya |
-| **M14** | **Talento:** sumar el acceso al menú, listar las búsquedas abiertas y ampliar con cultura y proceso | H11, U1 | Bajo | Medio | Prioridad de reclutamiento | Cuando Vortex lo decida |
-| **M18** | **Sistema visual base:** tokens de color por rol, escala tipográfica, radios, espaciado, duraciones y cortes de diseño comunes; botones, títulos, tarjetas y formularios en una sola hoja de estilos, con variantes explícitas. Conserva la identidad actual (ver [auditoría UI](auditoria-ui.md), sección 6) | UI1, UI2, UI3, UI4, UI5, UI8, UI9, UI10 | Medio | Medio | Equipo técnico del sitio | Antes del rediseño o junto con él |
+| **M14** | **Talento:** sumar el acceso al menú, listar las búsquedas abiertas y ampliar con cultura y proceso | H11 | Bajo | Medio | Prioridad de reclutamiento | Cuando Vortex lo decida |
+| **M18** | **Sistema visual base:** tokens de color por rol, escala tipográfica, radios, espaciado, duraciones y cortes de diseño comunes; botones, títulos, tarjetas y formularios en una sola hoja de estilos, con variantes explícitas. Conserva la identidad actual (ver [auditoría UI](auditoria-ui.md), sección 6) | UI1, UI3, UI4 | Medio | Medio | Equipo técnico del sitio | Antes del rediseño o junto con él |
 
-## 4. Trazabilidad: cada hallazgo y su mejora
+## 4. Hallazgos y su mejora
 
-| Hallazgo | Severidad | Mejora |
+Los **28 hallazgos vigentes**, ordenados por severidad. Cada uno enlaza a su detalle con evidencia, criterio y recomendación.
+
+| Hallazgo | Origen | Severidad | Mejora |
+|---|---|---|---|
+| [H1 · La primera pantalla no dice qué hace Vortex ni para quién](auditoria-web.md#h1--el-primer-vistazo-no-dice-qué-hace-vortex-ni-para-quién--severidad-3) | Auditoría web | 3 | M2, M9 |
+| [H2 · No hay pruebas de resultados](auditoria-web.md#h2--no-hay-pruebas-de-resultados--severidad-3) | Auditoría web | 3 | M6, M8, M9 |
+| [C1 · Los canales no cuentan lo mismo, ni siquiera el sitio con sus metadatos](analisis-comunicacion.md#c1--los-canales-no-cuentan-lo-mismo-de-vortex--severidad-3) | Comunicación | 3 | M1, M8 |
+| [H4 · "Agendar una llamada" lleva a un formulario](auditoria-web.md#h4--agendar-una-llamada-lleva-a-un-formulario-no-a-una-agenda--severidad-2) | Auditoría web | 2 | M3 |
+| [H5 · Plataformas con mensajes y destinos incoherentes](auditoria-web.md#h5--las-plataformas-mezclan-audiencias-y-sus-destinos-no-son-coherentes--severidad-2) | Auditoría web | 2 | M3, M10 |
+| [H6 · Todo el blog vive en LinkedIn](auditoria-web.md#h6--todo-el-blog-vive-en-linkedin--severidad-2) | Auditoría web | 2 | M11 |
+| [H7 · Información incompleta para buscadores y asistentes de IA](auditoria-web.md#h7--información-incompleta-para-buscadores-y-asistentes-de-ia--severidad-2) | Auditoría web | 2 | M4 |
+| [H8 · Estructura y jerarquía de encabezados](auditoria-web.md#h8--estructura-y-jerarquía-de-encabezados--severidad-2) | Auditoría web | 2 | M4 |
+| [H9 · Datos formales no visibles](auditoria-web.md#h9--no-se-encontraron-datos-formales-de-la-empresa--severidad-2) | Auditoría web | 2 | M7 |
+| [C2 · LinkedIn mezcla públicos](analisis-comunicacion.md#c2--linkedin-mezcla-públicos-sin-un-hilo-para-quien-contrata--severidad-2) | Comunicación | 2 | M12 |
+| [C3 · Instagram con otra voz y enlace a Linktree](analisis-comunicacion.md#c3--instagram-otra-voz-y-un-enlace-que-no-lleva-al-sitio--severidad-2) | Comunicación | 2 | M12 |
+| [C4 · YouTube desactualizado](analisis-comunicacion.md#c4--youtube-descripción-desactualizada-y-poco-uso--severidad-2) | Comunicación | 2 | M12 |
+| [C5 · La presencia externa describe a la Vortex de hace años](analisis-comunicacion.md#c5--lo-que-se-encuentra-afuera-describe-a-la-vortex-de-hace-años--severidad-2) | Comunicación | 2 | M13 |
+| [V1 · Home muy larga y scroll con imán](analisis-visual.md#v1--la-home-es-muy-larga-y-usa-una-mecánica-de-scroll-que-puede-confundir--severidad-2) | Análisis visual | 2 | M16 |
+| [V3 · Contraste insuficiente en el pie y sobre el globo](analisis-visual.md#v3--contraste-insuficiente-en-el-pie-y-texto-sobre-el-globo--severidad-2) | Análisis visual | 2 | M15 |
+| [V4 · Contenido que sólo aparece al tocar íconos](analisis-visual.md#v4--contenido-que-sólo-aparece-al-tocar-íconos--severidad-2) | Análisis visual | 2 | M16 |
+| [V5 · Elementos táctiles chicos en mobile](analisis-visual.md#v5--elementos-táctiles-chicos-y-botón-flotante-que-tapa-contenido-en-mobile--severidad-2) | Análisis visual | 2 | M15 |
+| [V7 · Imágenes sobredimensionadas y cargadas de entrada](analisis-visual.md#v7--imágenes-mucho-más-grandes-de-lo-que-se-muestran-cargadas-de-entrada--severidad-2) | Análisis visual | 2 | M17 |
+| [V8 · Peso visual en la decoración](analisis-visual.md#v8--el-peso-visual-está-en-la-decoración-no-en-el-contenido--severidad-2) | Análisis visual | 2 | M16 |
+| [UI3 · Escala tipográfica sin sistema y textos chicos](auditoria-ui.md#ui3--escala-tipográfica-sin-sistema-y-textos-chicos--severidad-2) | Auditoría UI | 2 | M15, M18 |
+| [UI6 · Casi sin estados de foco ni de error](auditoria-ui.md#ui6--casi-no-hay-estados-de-foco-ni-de-error--severidad-2) | Auditoría UI | 2 | M15 |
+| [U3 · Sin tecnologías concretas ni certificaciones](usabilidad-simulada.md#u3--quien-evalúa-lo-técnico-no-encuentra-tecnologías-concretas-ni-certificaciones--severidad-2) | Usabilidad simulada | 2 | M7 |
+| [H11 · Talento: poco contexto, fuera del menú y sin vacantes](auditoria-web.md#h11--talento-formulario-correcto-poco-contexto--severidad-1) | Auditoría web | 1 | M14 |
+| [V6 · Detalles del menú mobile](analisis-visual.md#v6--detalles-del-menú-mobile--severidad-1) | Análisis visual | 1 | M15 |
+| [V9 · Logos con tamaños visuales desparejos](analisis-visual.md#v9--logos-con-tamaños-visuales-desparejos--severidad-1) | Análisis visual | 1 | M15 |
+| [UI1 · No hay un sistema en el código](auditoria-ui.md#ui1--no-hay-un-sistema-en-el-código-valores-sueltos-y-componentes-reescritos-por-página--severidad-1) | Auditoría UI | 1 | M18 |
+| [UI4 · Botones sin regla de tamaño y forma](auditoria-ui.md#ui4--botones-la-jerarquía-funciona-los-tamaños-y-formas-no-siguen-una-regla--severidad-1) | Auditoría UI | 1 | M18 |
+| [U2 · Sin camino para partners](usabilidad-simulada.md#u2--no-hay-un-camino-para-partners--severidad-1) | Usabilidad simulada | 1 | M8 |
+
+### Fusionados y dudas
+
+Revisión del 2026-10-27: algunos registros describían el mismo problema desde otra revisión, y dos no se pudieron confirmar. Sus identificadores no se reutilizan.
+
+| Registro | Pasó a | Motivo |
 |---|---|---|
-| H1 · La primera pantalla no dice qué hace Vortex ni para quién | 3 | M2, M9 |
-| H2 · No hay pruebas de resultados | 3 | M6, M8, M9 |
-| C1 · Los canales no cuentan lo mismo | 3 | M1, M8 |
-| H3 · Sectores en metadatos y logos, no en el contenido | 2 | M1 |
-| H4 · "Agendar una llamada" lleva a un formulario | 2 | M3 |
-| H5 · Plataformas con mensajes y destinos incoherentes | 2 | M3, M10 |
-| H6 · Todo el blog vive en LinkedIn | 2 | M11 |
-| H7 · Información incompleta para buscadores y asistentes de IA | 2 | M4 |
-| H8 · Estructura de encabezados | 2 | M4 |
-| H9 · Datos formales no visibles | 2 | M7 |
-| H10 · Hero mobile con entrada animada | 2 | M5 |
-| C2 · LinkedIn mezcla públicos | 2 | M12 |
-| C3 · Instagram con otra voz y enlace a Linktree | 2 | M12 |
-| C4 · YouTube desactualizado | 2 | M12 |
-| C5 · La presencia externa describe a la Vortex de hace años | 2 | M13 |
-| H11 · Talento con poco contexto | 1 | M14 |
-| H12 · Bloque repetido en inglés | 1 | M5 |
-| V1 · Home muy larga y scroll con imán | 2 | M16 |
-| V2 · Demasiados tamaños de letra y textos chicos | 2 | M15 |
-| V3 · Contraste insuficiente en el pie y sobre el globo | 2 | M15 |
-| V4 · Contenido que sólo aparece al tocar íconos | 2 | M16 |
-| V5 · Elementos táctiles chicos en mobile | 2 | M15 |
-| V6 · Detalles del menú mobile | 1 | M15 |
-| V7 · Imágenes sobredimensionadas y cargadas de entrada | 2 | M17 |
-| V8 · Peso visual en la decoración | 2 | M16 |
-| V9 · Logos con tamaños visuales desparejos | 1 | M15 |
-| U1 · Vacantes fuera del sitio y del menú | 1 | M14 |
-| U2 · Sin camino para partners | 1 | M8 |
-| U3 · Sin tecnologías concretas ni certificaciones | 2 | M7 |
-| UI1 · Sin variables de diseño | 1 | M18 |
-| UI2 · Cada página reescribe sus componentes | 1 | M18 |
-| UI3 · Escala tipográfica sin sistema entre páginas | 2 | M15, M18 |
-| UI4 · Botones sin regla de tamaño y forma | 1 | M18 |
-| UI5 · Diez radios de esquina | 1 | M18 |
-| UI6 · Casi sin estados de foco ni de error | 2 | M15 |
-| UI7 · Jerarquía visual distinta de la del contenido | 1 | M4 |
-| UI8 · Formularios con lenguaje propio | 1 | M18 |
-| UI9 · Cortes de diseño dispersos | 1 | M18 |
-| UI10 · Movimiento sin regla común | 1 | M18 |
+| [H3](auditoria-web.md#h3--los-sectores-se-mencionan-en-los-metadatos-y-en-los-logos-no-en-el-contenido--fusionado-en-c1) · Sectores en metadatos y logos, no en el contenido | C1 | Es una de las diferencias de mensaje que C1 ya registra |
+| [V2](analisis-visual.md#v2--demasiados-tamaños-de-letra-y-textos-chicos-o-livianos--fusionado-en-ui3) · Demasiados tamaños de letra y textos chicos | UI3 | UI3 midió lo mismo en las 8 páginas |
+| [U1](usabilidad-simulada.md#u1--las-vacantes-no-están-en-el-sitio-y-trabajá-con-nosotros-no-está-en-el-menú--fusionado-en-h11) · Vacantes fuera del sitio y del menú | H11 | Mismo problema del público talento |
+| [UI2](auditoria-ui.md#ui2--cada-página-reescribe-sus-componentes--fusionado-en-ui1), [UI5](auditoria-ui.md#ui5--diez-radios-de-esquina-distintos--fusionado-en-ui1), [UI9](auditoria-ui.md#ui9--cortes-de-diseño-dispersos-y-dependientes-del-alto-de-la-ventana--fusionado-en-ui1), [UI10](auditoria-ui.md#ui10--movimiento-sin-una-regla-común--fusionado-en-ui1) · Componentes reescritos, radios, cortes y duraciones | UI1 | Síntomas de la misma causa: no hay un sistema en el código |
+| [UI7](auditoria-ui.md#ui7--la-jerarquía-visual-no-siempre-coincide-con-la-del-contenido--fusionado-en-h8) · Jerarquía visual distinta de la del contenido | H8 | Mismo problema de encabezados, visto desde el estilo |
+| [UI8](auditoria-ui.md#ui8--formularios-prolijos-pero-con-su-propio-lenguaje--fusionado-en-ui3-y-ui4) · Formularios con lenguaje propio | UI3 y UI4 | Las etiquetas son un caso de textos chicos y el envío, de botones |
+| [H10](auditoria-web.md#h10--en-mobile-el-cuerpo-del-hero-aparece-con-animación-gradual--a-verificar-no-cuenta-como-hallazgo) · Hero mobile con entrada animada | Duda a verificar (M5) | No se reprodujo en una segunda prueba |
+| [H12](auditoria-web.md#h12--en-el-bloque-platforms-aparece-dos-veces-en-el-texto-de-la-home--a-verificar-no-cuenta-como-hallazgo) · Bloque repetido en inglés | Duda a verificar (M5) | No se confirmó en pantalla |
 
 ## 5. Decisiones que se piden a Vortex
 

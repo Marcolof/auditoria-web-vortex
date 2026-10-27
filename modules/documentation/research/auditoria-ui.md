@@ -22,7 +22,7 @@ Complementa el [análisis visual](analisis-visual.md), que evalúa cómo se ve y
 - **Hay una identidad, pero no un sistema.** Negro, verde `#A0D232`, blanco y una sola tipografía (Rubik) se usan con coherencia en todo el sitio. Pero el código no tiene variables de diseño, y cada página trae sus propios estilos. El resultado es una marca reconocible con muchas variantes chicas que nadie decidió.
 - **Lo más consistente:** cabecera y menú, pie, botón principal verde y títulos de sección verdes en mayúsculas.
 - **Dónde se rompe:** la escala tipográfica (51 tamaños distintos entre las 8 páginas), los tamaños y formas de los botones, los radios de las esquinas y los estados de foco, que casi no existen.
-- **10 hallazgos nuevos** (UI1 a UI10): 2 menores y 8 cosméticos. Ninguno impide usar el sitio. Juntos explican por qué el sitio se siente "armado a mano" y por qué cada cambio cuesta más de lo necesario.
+- **4 hallazgos** (UI1, UI3, UI4 y UI6): 2 menores y 2 cosméticos, después de fusionar los que se superponían (sección 5). Ninguno impide usar el sitio. Juntos explican por qué el sitio se siente "armado a mano" y por qué cada cambio cuesta más de lo necesario.
 
 ## 2. El sistema de hecho
 
@@ -113,60 +113,52 @@ Consistencia: **Alta** = se ve y se comporta igual en todas las páginas donde a
 
 Severidad en la escala de Nielsen (0 a 4), igual que la [auditoría web](auditoria-web.md) y el [análisis visual](analisis-visual.md). La columna **Afecta** distingue el impacto en las personas del impacto en el mantenimiento del sitio.
 
-### UI1 · No hay variables de diseño: todos los valores están escritos a mano — Severidad 1
+> **Revisión del 2026-10-27.** La primera versión tenía 10 hallazgos (UI1 a UI10). Varios eran síntomas de la misma causa y se fusionaron: **UI2, UI5, UI9 y UI10 en UI1**; **UI8 en UI3 y UI4**; **UI7 en H8** de la [auditoría web](auditoria-web.md). Quedan **4 hallazgos: UI1, UI3, UI4 y UI6**. Los identificadores fusionados no se reutilizan.
+
+### UI1 · No hay un sistema en el código: valores sueltos y componentes reescritos por página — Severidad 1
 
 | Campo | Contenido |
 |---|---|
 | Afecta | Mantenimiento y consistencia; indirectamente, a las personas |
-| Observación | El sitio no declara ninguna variable CSS. El verde aparece escrito 83 veces. Hay 4 casi-negros para paneles, 7 transparencias de blanco para texto y 8 para bordes y superficies, sin un criterio visible de cuál usar |
+| Observación | **Valores sueltos:** el sitio no declara ninguna variable CSS. El verde aparece escrito 83 veces; hay 4 casi-negros para paneles, 7 transparencias de blanco para texto y 8 para bordes y superficies; 10 radios de esquina (6, 8, 10, 14, 16, 18 y 20 px, 100 px, 999 px y 50 %); 9 duraciones de transición (0,2 a 1 s) sin una curva común; y 6 cortes de ancho más uno de alto, repartidos entre la hoja común y cada página. **Componentes reescritos:** además de la hoja común (96 reglas), cada página trae entre 34 y 179 reglas propias; el botón de cierre de página existe con seis nombres distintos (`btn-primary`, `sol-cierre-btn`, `ct-cierre-btn`, `sv-cierre-btn`, `hb-enviar`, `tcn-enviar`) |
 | Criterio | Consistencia y estándares (Nielsen 4); buenas prácticas de sistemas de diseño |
-| Interpretación | Cada pantalla se ajustó "a ojo". La marca se mantiene porque la paleta es corta, pero cualquier cambio (por ejemplo, subir el contraste del pie) hay que buscarlo y repetirlo en muchos lugares |
-| Evidencia | Recorrido de todas las reglas CSS de las 8 páginas |
-| Recomendación | Definir tokens de color con roles (fondo, superficie, borde, texto principal, texto secundario, acento, acento hover) y reemplazar los valores sueltos |
+| Interpretación | Cada pantalla se ajustó "a ojo". La marca se mantiene porque la paleta es corta, pero aparecen diferencias de pocos píxeles que nadie decidió y que suman la sensación de "casi igual". Cualquier cambio (por ejemplo, subir el contraste del pie) hay que buscarlo y repetirlo en muchos lugares. Es la causa de buena parte de UI3 y UI4 |
+| Evidencia | Recorrido de todas las reglas CSS y media queries de las 8 páginas; clases y estilos calculados de los botones |
+| Límite | Que dos páginas cambien de diseño en anchos distintos es una inferencia: no se recorrieron todos los anchos. La IA no evalúa si las animaciones son fluidas (ver [análisis visual](analisis-visual.md), sección 1) |
+| Recomendación | Definir tokens con roles (color, radios, espaciado, duraciones, cortes de diseño) y pasar los componentes repetidos (botones, títulos de sección, tarjetas, formularios) a la hoja común, con variantes explícitas. Tres radios, dos o tres duraciones con una curva común y tres o cuatro cortes |
+| Incluye | UI2, UI5, UI9 y UI10 de la primera versión |
 
-### UI2 · Cada página reescribe sus componentes — Severidad 1
+### UI2 · Cada página reescribe sus componentes — Fusionado en UI1
 
-| Campo | Contenido |
-|---|---|
-| Afecta | Mantenimiento; consistencia visible entre páginas |
-| Observación | Además de la hoja común (96 reglas), cada página trae entre 34 y 179 reglas propias. El botón de cierre de página existe con seis nombres distintos (`btn-primary`, `sol-cierre-btn`, `ct-cierre-btn`, `sv-cierre-btn`, `hb-enviar`, `tcn-enviar`), con cuatro rellenos y dos radios |
-| Criterio | Consistencia y estándares (Nielsen 4) |
-| Interpretación | Las variantes no vienen de una decisión de diseño sino de copiar y ajustar. Es la causa de varias diferencias chicas que se ven en UI3, UI4 y UI5 |
-| Evidencia | Hojas de estilo por página; clases y estilos calculados de los botones |
-| Recomendación | Pasar los componentes repetidos (botones, títulos de sección, tarjetas, formularios) a la hoja común, con variantes explícitas |
+> Fusionado en **UI1** el 2026-10-27: es la misma causa (no hay un sistema en el código). No se cuenta aparte.
 
-### UI3 · La escala tipográfica no se sostiene entre páginas — Severidad 2
+### UI3 · Escala tipográfica sin sistema y textos chicos — Severidad 2
 
 | Campo | Contenido |
 |---|---|
 | Afecta | Personas (legibilidad y jerarquía) y mantenimiento |
-| Observación | Amplía V2, que medía sólo la home. Entre las 8 páginas hay **51 tamaños distintos** en escritorio. El `h1` mide 55,7, 58,9 o 71,6 px según la página. Los `h2` van de 16,6 a 55,7 px y usan cuatro pesos. Los títulos escalan con el **alto** de la ventana: el mismo título se achica en una notebook de pantalla baja. Se declara un peso 600 que la fuente no carga, y se ve como 700 |
+| Observación | Entre las 8 páginas hay **51 tamaños distintos** en escritorio (24 sólo en la home). El `h1` mide 55,7, 58,9 o 71,6 px según la página. Los `h2` van de 16,6 a 55,7 px y usan cuatro pesos. Los títulos escalan con el **alto** de la ventana: el mismo título se achica en una notebook de pantalla baja. Se declara un peso 600 que la fuente no carga, y se ve como 700. **Textos chicos y livianos:** menú en 12 px, peso 300 y mayúsculas; pie en 13 px; etapas de "Cómo trabajamos" en 13,4 px; etiquetas de los formularios en 11 px, mayúsculas y verde al 85 %; datos del equipo en Sobre Vortex en 10 px |
 | Criterio | Consistencia (Nielsen 4); legibilidad |
-| Interpretación | Un mismo nivel de título no se ve igual en dos páginas, y la jerarquía depende del tamaño de la ventana. Quien recorre varias páginas no aprende "cómo se ve un título" |
+| Interpretación | Un mismo nivel de título no se ve igual en dos páginas, y la jerarquía depende del tamaño de la ventana. Los textos de 10 a 13 px en peso liviano sobre negro cuestan, sobre todo en el celular; las etiquetas del formulario, que son lo primero que se lee al contactar, son el texto más chico de la página |
 | Evidencia | Estilos calculados de todos los textos visibles a 1280 × 800 y a 375 × 812 |
-| Recomendación | Escala de 6 a 8 pasos con roles (título de página, título de sección, subtítulo, texto, texto chico, etiqueta), escalado sólo por ancho, mínimo de 14 px para lectura y cargar sólo los pesos que se usan |
+| Recomendación | Escala de 6 a 8 pasos con roles (título de página, título de sección, subtítulo, texto, texto chico, etiqueta), escalado sólo por ancho, mínimo de 14 px para lectura (también en etiquetas, en minúscula) y cargar sólo los pesos que se usan |
+| Incluye | V2 del [análisis visual](analisis-visual.md) y las etiquetas de UI8 |
 
 ### UI4 · Botones: la jerarquía funciona, los tamaños y formas no siguen una regla — Severidad 1
 
 | Campo | Contenido |
 |---|---|
 | Afecta | Personas (reconocer qué es un botón y cuál es el principal) |
-| Observación | El botón principal verde se reconoce bien (VF3). Pero el mismo llamado "Conocer [plataforma]" mide 36 px de alto con texto de 12 px en la home y 47 px con texto de 14 px en Plataformas. Los botones secundarios tienen tres formas: rectángulo con radio 6, píldora de radio 100 y píldora de radio 999 |
+| Observación | El botón principal verde se reconoce bien (VF3). Pero el mismo llamado "Conocer [plataforma]" mide 36 px de alto con texto de 12 px en la home y 47 px con texto de 14 px en Plataformas. El botón de envío de los formularios usa radio 8 y relleno 15 × 40, distinto del resto (radio 6). Los botones secundarios tienen tres formas: rectángulo con radio 6, píldora de radio 100 y píldora de radio 999 |
 | Criterio | Consistencia y estándares (Nielsen 4) |
-| Interpretación | Los botones secundarios no se leen como una familia; la píldora del aviso de cookies parece de otro sitio |
+| Interpretación | Los botones no se leen como una familia; la píldora del aviso de cookies parece de otro sitio |
 | Evidencia | Estilos calculados de los elementos interactivos de cada página |
-| Recomendación | Tres tamaños (chico, mediano, grande) y dos o tres estilos (principal, secundario, texto), con una sola forma de esquina |
+| Recomendación | Tres tamaños (chico, mediano, grande) y dos o tres estilos (principal, secundario, texto), con una sola forma de esquina. El envío de formulario usa el botón principal grande |
+| Incluye | El botón de envío de UI8 |
 
-### UI5 · Diez radios de esquina distintos — Severidad 1
+### UI5 · Diez radios de esquina distintos — Fusionado en UI1
 
-| Campo | Contenido |
-|---|---|
-| Afecta | Percepción de prolijidad |
-| Observación | 6, 8, 10, 14, 16, 18 y 20 px, 100 px, 999 px y 50 %. Las tarjetas usan 16 (video, blog), 18 o 20 px (servicios); los botones, 6; los campos y el botón de envío, 8 |
-| Criterio | Consistencia visual |
-| Interpretación | Diferencias de pocos píxeles que no se notan una por una, pero que suman la sensación de "casi igual" |
-| Evidencia | Reglas CSS declaradas |
-| Recomendación | Tres radios (chico para controles, mediano para tarjetas, completo para píldoras y círculos) |
+> Fusionado en **UI1** el 2026-10-27: los radios son uno de los valores sueltos. No se cuenta aparte.
 
 ### UI6 · Casi no hay estados de foco ni de error — Severidad 2
 
@@ -180,59 +172,30 @@ Severidad en la escala de Nielsen (0 a 4), igual que la [auditoría web](auditor
 | Límite | No se hizo una prueba completa con teclado ni se midió el contraste del borde de foco sobre el fondo real |
 | Recomendación | Un estilo de foco visible y común (por ejemplo, un contorno verde de 2 px con separación) para enlaces, botones y campos. Definir y mostrar el estado de error de cada campo |
 
-### UI7 · La jerarquía visual no siempre coincide con la del contenido — Severidad 1
+### UI7 · La jerarquía visual no siempre coincide con la del contenido — Fusionado en H8
 
-| Campo | Contenido |
-|---|---|
-| Afecta | Personas que escanean o usan lector de pantalla; buscadores |
-| Observación | En Plataformas, "¿Qué permite?" es un encabezado de 14,7 px, mientras el nombre de cada producto es un párrafo de 19 px. Hay un `h2` oculto. En Sobre Vortex, un `h2` va en peso 400 y los nombres del equipo son `h3` de 15 px. En la home el titular principal no es un encabezado (H8) |
-| Criterio | WCAG 2.2: 1.3.1 (información y relaciones); Nielsen 4 |
-| Interpretación | El tamaño se eligió por cómo se ve y no por el nivel del contenido. Eso agrava UI3: no hay una correspondencia fija entre nivel y estilo |
-| Evidencia | Encabezados de cada página con sus estilos calculados |
-| Recomendación | Asignar un estilo fijo a cada nivel de encabezado y usar el nivel que corresponde al contenido |
+> Fusionado en **H8** de la [auditoría web](auditoria-web.md) el 2026-10-27: es el mismo problema de estructura de encabezados, visto desde el estilo. No se cuenta aparte.
 
-### UI8 · Formularios prolijos pero con su propio lenguaje — Severidad 1
+### UI8 · Formularios prolijos pero con su propio lenguaje — Fusionado en UI3 y UI4
 
-| Campo | Contenido |
-|---|---|
-| Afecta | Personas (lectura de etiquetas) y consistencia |
-| Observación | Los campos están bien resueltos: etiquetas asociadas, 44 px de alto, mismo estilo en Hablemos y Trabajá con nosotros. Pero las etiquetas van en 11 px, mayúsculas y verde al 85 %. Campos y botón de envío usan radio 8 y relleno 15 × 40, distintos del resto de los botones (radio 6) |
-| Criterio | Legibilidad; consistencia |
-| Interpretación | Las etiquetas son lo primero que se lee en un formulario y hoy son el texto más chico de la página |
-| Evidencia | Estilos calculados de los dos formularios |
-| Recomendación | Etiquetas de al menos 14 px en minúscula, y que el botón de envío sea el botón principal grande del sistema |
+> Fusionado el 2026-10-27: las etiquetas de 11 px pasan a **UI3** y el botón de envío a **UI4**. Que los campos están bien resueltos (etiquetas asociadas, 44 px de alto, mismo estilo en los dos formularios) queda en el inventario de la sección 3. No se cuenta aparte.
 
-### UI9 · Cortes de diseño dispersos y dependientes del alto de la ventana — Severidad 1
+### UI9 · Cortes de diseño dispersos y dependientes del alto de la ventana — Fusionado en UI1
 
-| Campo | Contenido |
-|---|---|
-| Afecta | Mantenimiento; posibles diferencias entre pantallas |
-| Observación | Seis cortes de ancho (600, 768/769, 900, 1100 y 1320 px, más "pantalla táctil") y uno de alto (≤ 820 px), declarados en la hoja común y en cada página. Los títulos también escalan con el alto (UI3) |
-| Criterio | Buenas prácticas de diseño adaptable |
-| Interpretación | Con tantos cortes repartidos por página, es probable que dos páginas cambien de diseño en anchos distintos. Es una inferencia: no se recorrieron todos los anchos |
-| Evidencia | Media queries de las hojas de estilo |
-| Recomendación | Tres o cuatro cortes comunes, declarados una sola vez |
+> Fusionado en **UI1** el 2026-10-27: los cortes de diseño son uno de los valores sueltos. No se cuenta aparte.
 
-### UI10 · Movimiento sin una regla común — Severidad 1
+### UI10 · Movimiento sin una regla común — Fusionado en UI1
 
-| Campo | Contenido |
-|---|---|
-| Afecta | Percepción de pulido |
-| Observación | Nueve duraciones de transición distintas (0,2 a 1 s), sin una curva de aceleración común. A favor: el sitio respeta la preferencia de movimiento reducido |
-| Criterio | Consistencia visual |
-| Interpretación | Detalle fino. Se nota poco por separado, pero suma a la sensación de que cada parte se ajustó por su cuenta |
-| Evidencia | Reglas CSS declaradas |
-| Límite | La IA ve las animaciones como fotos sucesivas: no evalúa si son fluidas (ver [análisis visual](analisis-visual.md), sección 1) |
-| Recomendación | Dos o tres duraciones (rápida, media, lenta) y una curva común, aparte de las animaciones de escena (globo, partículas) |
+> Fusionado en **UI1** el 2026-10-27: las duraciones son uno de los valores sueltos. Que el sitio respeta el movimiento reducido queda en la sección 2.4. No se cuenta aparte.
 
 ## 6. Diagnóstico: qué conservar, qué unificar y qué rediseñar
 
 | Decisión | Qué | Por qué |
 |---|---|---|
 | **Conservar** | Paleta negro, verde `#A0D232` y blanco; violeta sólo en efectos; Rubik como única familia; botón principal verde lleno con texto negro; títulos de sección verdes; cabecera y pie | Son la parte reconocible de la marca y ya se usan con constancia |
-| **Unificar** | Color por roles (UI1); componentes comunes en una sola hoja (UI2); escala tipográfica (UI3); familia de botones (UI4); radios (UI5); duraciones (UI10); cortes de diseño (UI9) | La identidad ya está; falta convertirla en reglas. No cambia cómo se ve la marca: la ordena |
+| **Unificar** | Color por roles, radios, duraciones, cortes de diseño y componentes comunes en una sola hoja (UI1); escala tipográfica (UI3); familia de botones (UI4) | La identidad ya está; falta convertirla en reglas. No cambia cómo se ve la marca: la ordena |
 | **Agregar** | Estados de foco, presionado, deshabilitado y error (UI6) | Hoy faltan, y afectan al paso de contacto |
-| **Rediseñar** | Jerarquía de encabezados por página (UI7); etiquetas de formulario (UI8); tratamiento de logos (V9); y lo que ya señaló el análisis visual: peso visual, contenido oculto tras íconos y largo de la home (V1, V4, V8) | Son decisiones de composición, no sólo de valores; conviene resolverlas en la propuesta de diseño |
+| **Rediseñar** | Jerarquía de encabezados por página (H8); etiquetas de formulario (UI3); tratamiento de logos (V9); y lo que ya señaló el análisis visual: peso visual, contenido oculto tras íconos y largo de la home (V1, V4, V8) | Son decisiones de composición, no sólo de valores; conviene resolverlas en la propuesta de diseño |
 
 **Recomendación:** antes de rediseñar, escribir la base del sistema (tokens y componentes) a partir de lo que hay que conservar. Así la propuesta de diseño parte de reglas y el sitio actual puede mejorar sin esperar el rediseño completo.
 
@@ -240,10 +203,9 @@ Severidad en la escala de Nielsen (0 a 4), igual que la [auditoría web](auditor
 
 | Hallazgo | Mejora |
 |---|---|
-| UI1, UI2, UI4, UI5, UI8, UI9, UI10 | **M18** · Sistema visual base (nueva) |
+| UI1, UI4 | **M18** · Sistema visual base |
 | UI3 | M15 (mínimo de lectura y escala corta) y M18 (escala como tokens) |
 | UI6 | M15 (foco visible) |
-| UI7 | M4 (encabezados) |
 
 Detalle e indicadores en el [plan de mejoras](plan-de-mejoras-web.md).
 

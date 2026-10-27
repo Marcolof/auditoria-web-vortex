@@ -18,13 +18,13 @@ El módulo **UX Research** del Hub es la versión sintética para clientes y eje
 | [Encuadre](research/encuadre.md) | Propósito, problema, objetivos, preguntas de investigación e hipótesis | Borrador |
 | [Roadmap](research/roadmap.md) | Pasos 0–8 con actividades, método, insumos, salida y criterio de cierre | Borrador |
 | [Modelo de públicos y confianza](research/modelo-de-publicos.md) | Universo de públicos, qué necesita cada uno para confiar, criterios de priorización | En revisión |
-| [Auditoría web](research/auditoria-web.md) | Revisión experta de vortex-it.com por público: 12 hallazgos con evidencia y severidad, fortalezas y recomendaciones | Borrador |
-| [Análisis visual](research/analisis-visual.md) | Qué tan bien ve una IA lo visual, valoración subjetiva del atractivo con puntaje por dimensión, medición de imágenes y scroll, y 9 hallazgos | Borrador |
-| [Auditoría UI](research/auditoria-ui.md) | Sistema visual de hecho (color, tipografía, espaciado, radios, movimiento, cortes), inventario de componentes, estados, 10 hallazgos y qué conservar, unificar o rediseñar | Borrador |
-| [Usabilidad simulada](research/usabilidad-simulada.md) | 9 tareas por perfil simuladas con IA, resultados, sesgos, 3 hallazgos nuevos y plan para el test real | Borrador |
+| [Auditoría web](research/auditoria-web.md) | Revisión experta de vortex-it.com por público: 9 hallazgos con evidencia y severidad, 2 dudas a verificar, fortalezas y recomendaciones | Borrador |
+| [Análisis visual](research/analisis-visual.md) | Qué tan bien ve una IA lo visual, valoración subjetiva del atractivo con puntaje por dimensión, medición de imágenes y scroll, y 8 hallazgos | Borrador |
+| [Auditoría UI](research/auditoria-ui.md) | Sistema visual de hecho (color, tipografía, espaciado, radios, movimiento, cortes), inventario de componentes, estados, 4 hallazgos y qué conservar, unificar o rediseñar | Borrador |
+| [Usabilidad simulada](research/usabilidad-simulada.md) | 9 tareas por perfil simuladas con IA, resultados, sesgos, 2 hallazgos nuevos y plan para el test real | Borrador |
 | [Análisis de comunicación](research/analisis-comunicacion.md) | LinkedIn, YouTube, Instagram y búsqueda web: 5 hallazgos, coherencia entre canales y prueba pendiente con asistentes de IA | Borrador |
 | [Qué debería mostrar la web](research/web-que-mostrar.md) | Propuesta de contenido por público: preguntas de cada visita, inicio, casos, opciones de mensaje a probar, orden de trabajo y validación | Borrador |
-| [Plan de mejoras de la web](research/plan-de-mejoras-web.md) | 18 mejoras en tres etapas que cubren los 39 hallazgos, con impacto, esfuerzo, dependencias, decisiones pedidas e indicadores | Borrador |
+| [Plan de mejoras de la web](research/plan-de-mejoras-web.md) | 18 mejoras en tres etapas que cubren los 28 hallazgos, con enlace al detalle de cada uno, fusiones, con impacto, esfuerzo, dependencias, decisiones pedidas e indicadores | Borrador |
 | [Encuadre v1](research/archivo/encuadre-v1.md) | Primera versión, basada en la web actual. Observaciones O1–O10 | Reemplazado |
 
 ## Proyecto

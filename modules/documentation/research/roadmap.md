@@ -150,9 +150,10 @@ Los pasos 3 y 4 pueden correr en paralelo con el 1 y el 2. Los demás dependen d
 - 6 a 10 entrevistas: clientes actuales, oportunidades perdidas y prospectos del ICP.
 - 2 a 4 entrevistas a públicos secundarios elegidos (por ejemplo, un partner y un candidato).
 - Test de primera impresión de la home (5 segundos) con perfiles del ICP: qué entienden que hace Vortex y para quién.
+- Test de tareas con 5 a 8 personas de los perfiles prioritarios, con las tareas T1 a T9 ya probadas en la [usabilidad simulada](usabilidad-simulada.md).
 - Consentimiento informado y anonimización.
 
-**Método.** Entrevistas en profundidad y test de primera impresión.
+**Método.** Entrevistas en profundidad, test de primera impresión y test de tareas.
 **Insumos.** Proto-personas del paso 5; contactos y reclutamiento.
 **Salida.** Notas y grabaciones anonimizadas, con su procedencia.
 **Listo cuando.** Cada hipótesis prioritaria quedó confirmada, ajustada o descartada.

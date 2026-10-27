@@ -1,6 +1,6 @@
 # Benchmark
 
-> **En una frase:** Cómo se presentan otras empresas de tecnología y qué espacio queda libre para diferenciarse.
+> **En una frase:** cómo se presentan otras empresas de tecnología y qué espacio queda libre para diferenciarse.
 
 **Estado:** todavía no empezó.
 

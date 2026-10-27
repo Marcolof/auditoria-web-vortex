@@ -53,7 +53,7 @@ sources: [vortex-it.com snapshot 2026-10-26, linkedin.com/company/vortex-it-ok 2
 - **Enunciado:** "Sos gerente de operaciones en un banco. Querés saber rápido si esta empresa ya trabajó con bancos y en qué tipo de proyecto."
 - **Recorrido:** home, desplazarse hasta "Confían en nosotros", la quinta sección, a unos 4.400 px del inicio. Ahí aparecen los logos de Galicia y Naranja X en un carrusel, sin enlace. Soluciones no menciona sectores.
 - **Dónde se trabó:** las palabras "banco", "banca", "financiero" o "fintech" no aparecen en el texto visible de ninguna de las ocho páginas en español. No hay ningún caso.
-- **Relacionado con:** H2, H3, V1.
+- **Relacionado con:** H2, C1, V1.
 
 ### T2 · Quien decide: pedir una reunión por automatización — Éxito
 
@@ -84,7 +84,7 @@ sources: [vortex-it.com snapshot 2026-10-26, linkedin.com/company/vortex-it-ok 2
 
 - **Recorrido:** "Trabajá con nosotros" **no está en el menú principal**, ni en escritorio ni en mobile. Está en el pie de página y al final de Sobre Vortex. La página tiene un formulario general, sin vacantes.
 - **Dónde se trabó:** el mismo día, la página de LinkedIn de Vortex mostraba una búsqueda activa de "Desarrollador/a de Agentes de IA (Python)". Esa vacante no figura en el sitio.
-- **Hallazgo nuevo:** U1.
+- **Hallazgo nuevo:** U1 (fusionado después en H11).
 
 ### T7 · Partner: proponer una alianza — Parcial
 
@@ -106,7 +106,9 @@ sources: [vortex-it.com snapshot 2026-10-26, linkedin.com/company/vortex-it-ok 2
 
 ## 4. Hallazgos nuevos
 
-### U1 · Las vacantes no están en el sitio y "Trabajá con nosotros" no está en el menú — Severidad 1
+### U1 · Las vacantes no están en el sitio y "Trabajá con nosotros" no está en el menú — Fusionado en H11
+
+> Fusionado en **H11** de la [auditoría web](auditoria-web.md) el 2026-10-27: es el mismo problema del público talento, visto en la tarea. No se cuenta aparte.
 
 | Campo | Contenido |
 |---|---|

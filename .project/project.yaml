@@ -139,6 +139,15 @@ decisions:
   - decision: "En Research, lo visual y la auditoría UI se unifican en 'Diseño visual y UI' (?m=visual-ui) y la usabilidad simulada queda aparte (?m=usabilidad). En Documentación siguen como documentos separados (analisis-visual, auditoria-ui, usabilidad-simulada). Los ids viejos redirigen vía 'redirecciones' en modulos.json"
     basis: user
     date: "2026-10-27"
+  - decision: "Revisión de todos los submódulos de Research: coherencia de enlaces, datos y textos; Hallazgos y recomendaciones reescrito con origen de los 39 hallazgos, 5 mejoras principales (suma legibilidad/recorrido y sistema visual) y paso 4 en Qué sigue; paso 6 del roadmap suma el test de tareas T1–T9"
+    basis: user
+    date: "2026-10-27"
+  - decision: "Consolidación de hallazgos: de 39 a 28 vigentes (3 mayores, 19 menores, 6 cosméticos). Fusionados H3→C1, V2→UI3, U1→H11, UI2/UI5/UI9/UI10→UI1, UI7→H8, UI8→UI3+UI4; H10 y H12 pasan a dudas a verificar (M5). Los ids fusionados no se reutilizan y se conservan marcados en su documento"
+    basis: user
+    date: "2026-10-27"
+  - decision: "Acceso 'Ver hallazgos' (clase md-action en assets/md-base.css) en Hallazgos y recomendaciones y en Estado, hacia la sección 4 del plan de mejoras, donde cada hallazgo enlaza a su detalle"
+    basis: user
+    date: "2026-10-27"
 
 sources:
   - id: web
@@ -182,7 +191,7 @@ delivery:
   local_status: local-verified
   repository: "https://github.com/Marcolof/auditoria-web-vortex"
   repository_visibility: public
-  repository_status: pushed   # último commit de contenido 7471488 (reorganización visual/UI/usabilidad) en main, 2026-10-27
+  repository_status: local-changes   # último push 7471488/e1befad en main; revisión de submódulos, consolidación de hallazgos y "Ver hallazgos" sin subir
   branch: main
   deploy_target: vercel        # proyecto Vercel a crear por el usuario e importar desde el repo
   deploy_config: "vercel.json + .vercelignore; estático, sin build ni variables de entorno"

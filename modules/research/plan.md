@@ -19,7 +19,7 @@ El objetivo principal es **conseguir clientes nuevos**, pero también tenemos en
 | Etapa | Qué hacemos |
 |---|---|
 | **1 · Entender** | Armamos el mapa de públicos posibles, escuchamos al equipo de Vortex y miramos los datos que ya existen. |
-| **2 · Evaluar** | Revisamos la web y las redes como las ve cada público, y miramos cómo lo hacen otras empresas del sector. |
+| **2 · Evaluar** | Revisamos la web y las redes como las ve cada público, su diseño visual y su facilidad de uso, y miramos cómo lo hacen otras empresas del sector. |
 | **3 · Definir y validar** | Elegimos los públicos prioritarios y lo contrastamos con clientes y prospectos reales. |
 | **4 · Decidir** | Resumimos lo aprendido y proponemos qué hacer primero. |
 

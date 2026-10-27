@@ -56,7 +56,9 @@ Severidad en escala de Nielsen (0 a 4), igual que la [auditoría web](auditoria-
 | Límite | No se probó con trackpad, teclado ni teléfono real |
 | Recomendación | Revisar con personas cómo se vive el recorrido. Evaluar quitar el imán obligatorio y reducir los tramos vacíos |
 
-### V2 · Demasiados tamaños de letra y textos chicos o livianos — Severidad 2
+### V2 · Demasiados tamaños de letra y textos chicos o livianos — Fusionado en UI3
+
+> Fusionado en **UI3** de la [auditoría UI](auditoria-ui.md) el 2026-10-27: UI3 midió lo mismo en las 8 páginas y suma los textos chicos. No se cuenta aparte. Se conserva el registro original.
 
 | Campo | Contenido |
 |---|---|
@@ -121,11 +123,11 @@ Escala de 1 (muy débil) a 5 (muy bien logrado).
 | **Identidad y coherencia** | 4 | Negro, verde y violeta, la misma tipografía y los mismos íconos en todas las páginas. Se reconoce como una marca |
 | **Color** | 4 | Paleta acotada y con carácter. El verde funciona como color de acción y de títulos a la vez, lo que le quita un poco de fuerza al botón |
 | **Imágenes y recursos** | 3 | Las maquetas de las plataformas son lo mejor visualmente. Pero los archivos son mucho más grandes de lo que se muestran (V7) y los logos tienen tamaños visuales desparejos (V9) |
-| **Tipografía** | 3 | Rubik da un tono moderno y amable. Los títulos funcionan; los textos chicos y livianos no (V2) |
+| **Tipografía** | 3 | Rubik da un tono moderno y amable. Los títulos funcionan; los textos chicos y livianos no (UI3, antes V2) |
 | **Distribución del peso visual** | 2 | Mucho espacio decorativo y poco contenido por pantalla. En varias secciones el ojo no encuentra dónde detenerse (V8) |
 | **Ritmo y uso del espacio** | 2 | Once pantallas de home con tramos vacíos. El ritmo es lento para quien busca información (V1) |
 | **Scroll y movimiento** | 3 | En la máquina de prueba fue fluido y las animaciones se sienten cuidadas. El salto con imán entre secciones y las tarjetas que vuelan sobre el título restan control (V1) |
-| **Legibilidad** | 3 | Lo grande se lee muy bien; lo chico, sobre todo en el pie y en mobile, no (V2, V3, V5) |
+| **Legibilidad** | 3 | Lo grande se lee muy bien; lo chico, sobre todo en el pie y en mobile, no (UI3, V3, V5) |
 
 **Promedio: 3,1 de 5.** La web **impacta y se ve moderna**, pero **prioriza la atmósfera sobre la información**: impresiona en los primeros segundos y después pide mucho scroll y mucha atención para encontrar lo que se busca.
 

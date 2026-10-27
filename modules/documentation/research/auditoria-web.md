@@ -86,7 +86,9 @@ Ordenados por severidad.
 | Recomendación | Definir con Vortex qué casos se pueden mostrar (con o sin nombre del cliente) y cómo se presentan: problema, qué se hizo, resultado |
 | Tipo | Contenido |
 
-### H3 · Los sectores se mencionan en los metadatos y en los logos, no en el contenido — Severidad 2
+### H3 · Los sectores se mencionan en los metadatos y en los logos, no en el contenido — Fusionado en C1
+
+> Fusionado en **C1** del [análisis de comunicación](analisis-comunicacion.md) el 2026-10-27: es una de las diferencias de mensaje entre fuentes que C1 ya registra (el sector). No se cuenta aparte. Se conserva el registro original.
 
 | Campo | Contenido |
 |---|---|
@@ -151,17 +153,18 @@ Ordenados por severidad.
 | Recomendación | Completar metadatos sociales, canonical, sitemap, robots y datos de organización. Contrastar con lo que hoy responden los asistentes de IA (paso 3, análisis de comunicación) |
 | Tipo | Técnico |
 
-### H8 · Estructura de encabezados — Severidad 2
+### H8 · Estructura y jerarquía de encabezados — Severidad 2
 
 | Campo | Contenido |
 |---|---|
-| Ubicación | Inicio (ES y EN), Sobre Vortex |
+| Ubicación | Inicio (ES y EN), Sobre Vortex, Plataformas |
 | Observación | La home no tiene ningún `h1`: el titular del hero no es un encabezado. En Sobre Vortex el `h1` es solamente "Sobre". Las demás páginas tienen un `h1` descriptivo |
+| Jerarquía visual | Sumado el 2026-10-27 desde la [auditoría UI](auditoria-ui.md) (antes UI7). El tamaño de los títulos no sigue su nivel: en Plataformas, "¿Qué permite?" es un encabezado de 14,7 px mientras el nombre de cada producto es un párrafo de 19 px, y hay un `h2` oculto; en Sobre Vortex, un `h2` va en peso 400 y los nombres del equipo son `h3` de 15 px |
 | Criterio | WCAG 2.2 (1.3.1 Información y relaciones; 2.4.6 Encabezados y etiquetas) |
 | Interpretación | Quienes navegan con lector de pantalla y los buscadores usan los encabezados para entender la página. Afecta sobre todo a la accesibilidad y a la interpretación automática |
 | Evidencia | Recuento de `h1` por página en el código |
 | Severidad | 2: corrección simple, impacto acotado |
-| Recomendación | Marcar el titular de la home como `h1` y dar a Sobre Vortex un `h1` completo |
+| Recomendación | Marcar el titular de la home como `h1`, dar a Sobre Vortex un `h1` completo, usar el nivel que corresponde al contenido y asignar un estilo fijo a cada nivel |
 | Tipo | Técnico |
 
 ### H9 · No se encontraron datos formales de la empresa — Severidad 2
@@ -177,7 +180,9 @@ Ordenados por severidad.
 | Recomendación | Confirmar con Vortex qué documentación formal existe y dónde publicarla |
 | Tipo | Contenido |
 
-### H10 · En mobile, el cuerpo del hero aparece con animación gradual — Severidad 2 (a verificar)
+### H10 · En mobile, el cuerpo del hero aparece con animación gradual — A verificar (no cuenta como hallazgo)
+
+> Revisión del 2026-10-27: no se reprodujo en una segunda prueba, así que deja de contarse como hallazgo y queda como **duda a verificar** en un teléfono real (mejora M5).
 
 | Campo | Contenido |
 |---|---|
@@ -186,7 +191,7 @@ Ordenados por severidad.
 | Criterio | Nielsen 1; necesidad común n.º 1 (entender en segundos) |
 | Interpretación | Si se confirma en dispositivos reales, parte de las visitas en mobile no vería el mensaje ni el botón en los primeros segundos. La prueba usó emulación y un solo intento, por lo que **no es concluyente** |
 | Evidencia | Capturas y mediciones en navegador emulado, 2026-10-26 |
-| Severidad | 2, provisoria hasta verificar |
+| Severidad | Sin asignar hasta verificar (antes 2, provisoria) |
 | Recomendación | Probar en uno o dos dispositivos reales y con conexiones lentas |
 | Actualización | En una segunda prueba del mismo día (mobile emulado) la bajada y el botón se vieron completos al cargar. **No se reprodujo.** Sigue pendiente de verificar en un teléfono real. Ver [análisis visual](analisis-visual.md) |
 | Tipo | Funcional |
@@ -200,11 +205,14 @@ Ordenados por severidad.
 | Criterio | Dimensión **buena fe** y necesidades del público talento |
 | Interpretación | Cumple como canal para recibir CV, pero no ayuda a quien duda en postularse. El público no es prioritario para captar clientes |
 | Evidencia | Texto y campos de la página |
-| Severidad | 1 |
-| Recomendación | Dejar para una etapa posterior, según lo que decida Vortex sobre la importancia del reclutamiento |
+| Acceso y vacantes | Sumado el 2026-10-27 desde la [usabilidad simulada](usabilidad-simulada.md) (antes U1). El menú principal (escritorio y mobile) no incluye "Trabajá con nosotros": está en el pie y al final de Sobre Vortex. El mismo día, LinkedIn mostraba una búsqueda activa que no figura en el sitio |
+| Severidad | 1: talento es un público secundario |
+| Recomendación | Sumar el acceso al menú, listar o enlazar las búsquedas abiertas y, en una etapa posterior, ampliar con cultura, proyectos y proceso, según lo que decida Vortex sobre la importancia del reclutamiento |
 | Tipo | Contenido |
 
-### H12 · EN: el bloque "Platforms" aparece dos veces en el texto de la home — Severidad 1 (a verificar)
+### H12 · EN: el bloque "Platforms" aparece dos veces en el texto de la home — A verificar (no cuenta como hallazgo)
+
+> Revisión del 2026-10-27: no se confirmó en pantalla, así que deja de contarse como hallazgo y queda como **duda a verificar** (mejora M5).
 
 | Campo | Contenido |
 |---|---|
@@ -213,7 +221,7 @@ Ordenados por severidad.
 | Criterio | Nielsen 4 (consistencia) |
 | Interpretación | Sin confirmar visualmente, no se puede afirmar que sea un problema |
 | Evidencia | Texto de `/en/` |
-| Severidad | 1, provisoria |
+| Severidad | Sin asignar hasta verificar (antes 1, provisoria) |
 | Recomendación | Revisar la versión en inglés en pantalla |
 | Tipo | Contenido / maquetación |
 
@@ -225,25 +233,25 @@ Lectura del autor sobre qué encuentra cada público hoy. Es un juicio, no un re
 |---|---|---|---|
 | **Quien decide** | Mensaje estratégico, método, cifras, logos, cierre dirigido a decisión | Qué hace y para quién en el primer vistazo (H1); casos con resultados (H2) | Parcial |
 | **Quien evalúa lo técnico** | Qué hace cada servicio, direcciones técnicas con su especialidad, partners | Casos técnicos, seguridad y cumplimiento, tecnologías concretas por servicio (H2) | Parcial |
-| **Quien impulsa la iniciativa** | Servicios explicados desde el problema (F1), método | Ejemplos de su área o sector (H2, H3) | Parcial |
+| **Quien impulsa la iniciativa** | Servicios explicados desde el problema (F1), método | Ejemplos de su área o sector (H2, C1) | Parcial |
 | **Compras, legales y seguridad** | Contacto, aviso de datos en formularios | Datos formales, privacidad y seguridad (H9) | Débil |
 | **Clientes actuales** | Blog, plataformas | Ningún espacio específico. No es necesariamente un problema para el sitio institucional | No evaluado |
 | **Partners y quienes recomiendan** | Logos de partners y membresías | Qué ofrece Vortex a un partner, casos conjuntos | Débil |
 | **Talento** | Formulario y mensaje breve (H11) | Cultura, vacantes, proceso | Parcial |
 | **Ecosistema** | Contacto general | Un camino explícito | Débil |
-| **Buscadores y asistentes de IA** | Títulos, descripciones y `hreflang` correctos | Metadatos sociales, datos estructurados, sitemap (H7); coherencia sectorial (H3) | Parcial |
+| **Buscadores y asistentes de IA** | Títulos, descripciones y `hreflang` correctos | Metadatos sociales, datos estructurados, sitemap (H7); coherencia sectorial (C1) | Parcial |
 
 ## 6. Recomendaciones agrupadas
 
 | Prioridad | Qué | Hallazgos | Esfuerzo estimado | Se valida con |
 |---|---|---|---|---|
-| 1 | Reformular la primera pantalla y probarla | H1, H3, H10 | Bajo | Test de primera impresión (paso 6) |
+| 1 | Reformular la primera pantalla y probarla | H1, C1 (sector) y H10 (a verificar) | Bajo | Test de primera impresión (paso 6) |
 | 2 | Definir y publicar casos de clientes | H2 | Medio: depende de permisos de los clientes | Entrevistas a clientes y prospectos (paso 6) |
 | 3 | Alinear los botones con su destino | H4, H5 | Bajo | Revisión del equipo |
 | 4 | Completar lo técnico: metadatos, `h1`, sitemap, robots, datos estructurados | H7, H8 | Bajo | Verificación técnica |
 | 5 | Decidir el rol del blog y de las plataformas en el mensaje | H5, H6 | Medio | Paso 1 (entrevistas internas) |
 | 6 | Publicar datos formales y de privacidad | H9 | Bajo | Confirmar qué existe |
-| 7 | Talento: ampliar información | H11 | Medio | Cuando Vortex lo priorice |
+| 7 | Talento: acceso en el menú, vacantes y más información | H11 | Medio | Cuando Vortex lo priorice |
 
 El esfuerzo es una estimación del autor, no un dato del equipo de Vortex.
 
@@ -251,7 +259,7 @@ El esfuerzo es una estimación del autor, no un dato del equipo de Vortex.
 
 | Tema | Detalle | Cómo se resuelve |
 |---|---|---|
-| Foco sectorial | La descripción para buscadores dice banca, retail y fintech; el texto visible no nombra industrias (H3) | Paso 1: confirmar el foco comercial |
+| Foco sectorial | La descripción para buscadores dice banca, retail y fintech; el texto visible no nombra industrias (C1, antes H3) | Paso 1: confirmar el foco comercial |
 | Rol de las plataformas | ¿Complementan la consultoría o se venden como productos aparte? (H5) | Paso 1 |
 | Autoría del blog | ¿Es una estrategia de voz personal o institucional? (H6) | Paso 1 |
 | Casos que se pueden mostrar | ¿Hay permisos de clientes? (H2) | Paso 1 |

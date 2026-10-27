@@ -26,8 +26,8 @@ La hipótesis H3 del [encuadre](encuadre.md) sugiere que muchos llegan por recom
 
 | # | Pregunta | Qué tiene que encontrar | Dónde falla hoy |
 |---|---|---|---|
-| 1 | **¿Qué hacen y para quién?** | Una frase concreta, en la primera pantalla | H1, H3, C1 |
-| 2 | **¿Es para mí?** | Su problema, su sector o su rol reflejados | H3 (sectores), H2 (sin casos) |
+| 1 | **¿Qué hacen y para quién?** | Una frase concreta, en la primera pantalla | H1, C1 |
+| 2 | **¿Es para mí?** | Su problema, su sector o su rol reflejados | C1 (sectores), H2 (sin casos) |
 | 3 | **¿Puedo confiar?** | Resultados, clientes parecidos, equipo, datos formales | H2, H9, C5 |
 | 4 | **¿Qué hago ahora?** | Un siguiente paso claro y honesto | H4, H5 |
 
@@ -63,7 +63,7 @@ Inventario de contenidos, no un mapa de navegación definitivo. La navegación s
 
 | Contenido | Estado propuesto | Para quién | Origen del hallazgo |
 |---|---|---|---|
-| **Inicio** | Reordenar y precisar (sección 6) | Todos | H1, H3 |
+| **Inicio** | Reordenar y precisar (sección 6) | Todos | H1, C1 |
 | **Soluciones** (4 líneas) | **Mantener** su estructura "qué resolvemos / qué hacemos / resultado". Sumar un ejemplo real por línea y confirmar si son cuatro o cinco líneas | Decide, impulsa, evalúa | F1, C1 |
 | **Casos de clientes** | **Nuevo.** Es el contenido que más falta (sección 7) | Decide, evalúa, impulsa | H2 |
 | **Cómo trabajamos** | **Mantener** | Decide | F2 |

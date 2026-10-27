@@ -32,18 +32,21 @@ La evaluación desde afuera está hecha. Lo que falta depende de Vortex (decisio
 
 | | |
 |---|---|
-| Hallazgos | **39**: 3 mayores, 22 menores y 14 cosméticos. Ninguno crítico |
+| Hallazgos | **28**: 3 mayores, 19 menores y 6 cosméticos. Ninguno crítico. [Ver hallazgos](../documentation/?doc=research/plan-de-mejoras-web.md#4-hallazgos-y-su-mejora) |
 | Mejoras propuestas | **18**, en tres etapas |
 | Tareas simuladas | **9**: 3 éxitos, 5 parciales y 1 fallo |
 | Valoración del atractivo | **3,1 de 5** (opinión del revisor) |
 | Personas entrevistadas o testeadas | **Ninguna todavía** |
 
-## Las tres conclusiones principales
+## Las conclusiones principales
 
 1. **Decir con claridad qué hace Vortex y para quién**, y lo mismo en todos los canales.
 2. **Mostrar resultados reales**: hoy no hay casos de clientes.
-3. **Que el sitio sea más fácil de recorrer**: más contenido y menos decoración, botones que hagan lo que prometen, imágenes y textos optimizados.
-4. **Ordenar el sistema visual antes de rediseñar**: la marca ya está; faltan reglas comunes de letra, botones y estados.
+3. **Que cada botón haga lo que promete** y que cada público encuentre su camino.
+4. **Que el sitio se lea y se recorra más fácil**: más contenido y menos decoración, textos legibles e imágenes optimizadas.
+5. **Ordenar el sistema visual antes de rediseñar**: la marca ya está; faltan reglas comunes de letra, botones y estados.
+
+Detalle en [Hallazgos y recomendaciones](?m=conclusiones).
 
 ## Qué tan firme es lo que sabemos
 

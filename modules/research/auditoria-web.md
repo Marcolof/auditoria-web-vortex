@@ -9,7 +9,7 @@
 - **Los servicios se explican desde el problema del cliente:** qué resuelven, qué hacen y qué resultado dan.
 - **El método de trabajo es claro:** cuatro etapas, fáciles de recordar.
 - **Hay señales de solidez:** más de 25 años, clientes de gran empresa, partners tecnológicos y un equipo directivo visible.
-- **El sitio está completo en español e inglés** y bien declarado para los buscadores.
+- **El sitio está completo en español e inglés**, con cada idioma bien indicado para los buscadores.
 - **El cierre le habla a quien decide**, y el formulario permite consultar aun si todavía se está explorando.
 
 ## Lo más importante a mejorar
@@ -45,8 +45,8 @@ Es una lectura del equipo de UX, no un resultado de usuarios.
 
 ## Qué no cubre
 
-Esta revisión no incluye LinkedIn, YouTube ni Instagram, que van en [análisis de comunicación](?m=comunicacion), ni los sitios de cada plataforma. Tampoco se probó con lectores de pantalla ni en dispositivos reales.
+Esta revisión no incluye LinkedIn, YouTube ni Instagram, que van en [análisis de comunicación](?m=comunicacion), ni los sitios de cada plataforma. Cómo se ve el sitio está en [diseño visual y UI](?m=visual-ui), y cómo se usa, en [usabilidad simulada](?m=usabilidad). Tampoco se probó con lectores de pantalla ni en dispositivos reales.
 
 ---
 
-Informe completo con los doce hallazgos, su evidencia y severidad en Documentación: [auditoría web](../documentation/?doc=research/auditoria-web.md).
+Informe completo con los hallazgos, su evidencia y severidad en Documentación: [auditoría web](../documentation/?doc=research/auditoria-web.md).
