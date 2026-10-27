@@ -22,8 +22,8 @@ La evaluación desde afuera está hecha. Lo que falta depende de Vortex (decisio
 | [Plan del research](?m=plan) | Qué queremos saber y cómo |
 | [Públicos y confianza](?m=publicos) | A quién le habla Vortex y qué necesita cada uno para confiar |
 | [Auditoría web](?m=auditoria-web) | Qué funciona y qué falta en el sitio |
-| [Visual y usabilidad simulada](?m=visual-usabilidad) | Cómo se ve, qué tan atractivo es y dónde se traba cada perfil |
-| [Auditoría UI](?m=auditoria-ui) | Qué sistema visual tiene la web, qué tan consistente es y dónde se rompe |
+| [Diseño visual y UI](?m=visual-ui) | Cómo se ve, qué tan atractivo es, qué sistema visual tiene y dónde se rompe |
+| [Usabilidad simulada](?m=usabilidad) | Dónde se traba cada perfil al usar el sitio |
 | [Análisis de comunicación](?m=comunicacion) | Si LinkedIn, YouTube, Instagram y la web cuentan lo mismo |
 | [Qué mostrar en la web](?m=contenido-web) | Qué necesita ver cada público y en qué orden |
 | [Hallazgos y recomendaciones](?m=conclusiones) | Qué mejorar y en qué orden (versión preliminar) |

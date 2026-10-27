@@ -80,4 +80,4 @@ El esfuerzo es una estimación del equipo de UX, no del equipo de Vortex.
 
 ---
 
-Plan completo con la tabla de las 18 mejoras, su trazabilidad con los 39 hallazgos y cómo se mide el avance, en Documentación: [plan de mejoras](../documentation/?doc=research/plan-de-mejoras-web.md). Basado en la [auditoría web](?m=auditoria-web), el [análisis visual y la usabilidad simulada](?m=visual-usabilidad), la [auditoría UI](?m=auditoria-ui), el [análisis de comunicación](?m=comunicacion) y [qué mostrar en la web](?m=contenido-web).
+Plan completo con la tabla de las 18 mejoras, su trazabilidad con los 39 hallazgos y cómo se mide el avance, en Documentación: [plan de mejoras](../documentation/?doc=research/plan-de-mejoras-web.md). Basado en la [auditoría web](?m=auditoria-web), el [diseño visual y UI](?m=visual-ui), la [usabilidad simulada](?m=usabilidad), el [análisis de comunicación](?m=comunicacion) y [qué mostrar en la web](?m=contenido-web).

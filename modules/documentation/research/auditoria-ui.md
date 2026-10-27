@@ -5,7 +5,7 @@ status: draft
 evidence: observed
 updated: 2026-10-27
 depends_on: [research.analisis-visual, research.auditoria-web]
-feeds: [research/auditoria-ui]
+feeds: [research/visual-ui]
 sources: [vortex-it.com snapshot 2026-10-27]
 ---
 

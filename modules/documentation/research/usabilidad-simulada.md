@@ -5,7 +5,7 @@ status: draft
 evidence: assumption
 updated: 2026-10-26
 depends_on: [research.modelo-de-publicos, research.auditoria-web]
-feeds: [research/visual-usabilidad, research/validacion]
+feeds: [research/usabilidad, research/validacion]
 sources: [vortex-it.com snapshot 2026-10-26, linkedin.com/company/vortex-it-ok 2026-10-26]
 ---
 

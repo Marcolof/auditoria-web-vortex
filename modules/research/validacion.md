@@ -16,7 +16,7 @@ Entrevistas con 6 a 10 clientes, oportunidades perdidas y prospectos, y una prue
 
 ## Ya preparado
 
-Las nueve tareas del test ya están escritas y se probaron en una [simulación con IA](?m=visual-usabilidad). Falta hacerlas con personas reales.
+Las nueve tareas del test ya están escritas y se probaron en una [simulación con IA](?m=usabilidad). Falta hacerlas con personas reales.
 
 ## Qué necesitamos
 

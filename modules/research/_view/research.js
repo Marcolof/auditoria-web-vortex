@@ -84,9 +84,12 @@
 
   async function init() {
     try {
-      const { modulos } = JSON.parse(await V.load('modulos.json'));
-      const m = requested && modulos.find((x) => x.id === requested);
-      if (requested && !m) throw new Error('módulo «' + requested + '»');
+      const { modulos, redirecciones = {} } = JSON.parse(await V.load('modulos.json'));
+      // Un id retirado abre el módulo que lo reemplazó y corrige la URL.
+      const id = redirecciones[requested] || requested;
+      if (id !== requested) history.replaceState(null, '', '?m=' + encodeURIComponent(id) + location.hash);
+      const m = id && modulos.find((x) => x.id === id);
+      if (id && !m) throw new Error('módulo «' + id + '»');
       if (m) await renderModule(m);
       else renderLanding(modulos);
     } catch (err) {

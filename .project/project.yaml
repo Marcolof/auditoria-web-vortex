@@ -136,6 +136,9 @@ decisions:
   - decision: "Plan de mejoras actualizado a 39 hallazgos y 18 mejoras: suma UI1–UI10 y M18 (sistema visual base); UI6 y UI3 refuerzan M15; UI7 se suma a M4"
     basis: recommended-default
     date: "2026-10-27"
+  - decision: "En Research, lo visual y la auditoría UI se unifican en 'Diseño visual y UI' (?m=visual-ui) y la usabilidad simulada queda aparte (?m=usabilidad). En Documentación siguen como documentos separados (analisis-visual, auditoria-ui, usabilidad-simulada). Los ids viejos redirigen vía 'redirecciones' en modulos.json"
+    basis: user
+    date: "2026-10-27"
 
 sources:
   - id: web
@@ -179,7 +182,7 @@ delivery:
   local_status: local-verified
   repository: "https://github.com/Marcolof/auditoria-web-vortex"
   repository_visibility: public
-  repository_status: pushed   # último commit de contenido 60fcbf6 (auditoría UI) en main, 2026-10-27
+  repository_status: local-changes   # último push 60fcbf6/042497b en main; reorganización visual/UI/usabilidad sin subir
   branch: main
   deploy_target: vercel        # proyecto Vercel a crear por el usuario e importar desde el repo
   deploy_config: "vercel.json + .vercelignore; estático, sin build ni variables de entorno"
@@ -229,8 +232,8 @@ modules:
       - { id: research-publicos, path: modules/research/publicos.md, audience: client, status: review, freshness: current, evidence: assumption, verification: content-reviewed, depends_on: [research.modelo-de-publicos] }
       - { id: research-negocio, path: modules/research/negocio.md, audience: client, status: draft, freshness: current, evidence: none, verification: content-reviewed, note: "plan del submódulo; sin hallazgos" }
       - { id: research-auditoria-web, path: modules/research/auditoria-web.md, audience: client, status: review, freshness: current, evidence: observed, verification: content-reviewed, depends_on: [research.auditoria-web], note: "revisión experta sin usuarios; alcance sólo vortex-it.com" }
-      - { id: research-visual-usabilidad, path: modules/research/visual-usabilidad.md, audience: client, status: review, freshness: current, evidence: assumption, verification: content-reviewed, depends_on: [research.analisis-visual, research.usabilidad-simulada], note: "revisión visual y usabilidad simuladas por IA; sin personas" }
-      - { id: research-auditoria-ui, path: modules/research/auditoria-ui.md, audience: client, status: review, freshness: current, evidence: observed, verification: content-reviewed, depends_on: [research.auditoria-ui], note: "diagnóstico del sistema visual hecho por IA; sin personas; no es propuesta de diseño" }
+      - { id: research-visual-ui, path: modules/research/visual-ui.md, audience: client, status: review, freshness: current, evidence: observed, verification: content-reviewed, depends_on: [research.analisis-visual, research.auditoria-ui], note: "une revisión visual (atractivo) y auditoría UI (sistema); hecho por IA, sin personas; reemplaza visual-usabilidad y auditoria-ui" }
+      - { id: research-usabilidad, path: modules/research/usabilidad.md, audience: client, status: review, freshness: current, evidence: assumption, verification: content-reviewed, depends_on: [research.usabilidad-simulada], note: "simulación con IA; sin personas" }
       - { id: research-comunicacion, path: modules/research/comunicacion.md, audience: client, status: review, freshness: current, evidence: observed, verification: content-reviewed, depends_on: [research.analisis-comunicacion], note: "perfiles públicos sin sesión; sin métricas; asistentes de IA no consultados" }
       - { id: research-contenido-web, path: modules/research/contenido-web.md, audience: client, status: review, freshness: current, evidence: assumption, verification: content-reviewed, depends_on: [research.web-que-mostrar], note: "propuesta de contenido; hipótesis; sin diseño ni textos finales" }
       - { id: research-benchmark, path: modules/research/benchmark.md, audience: client, status: draft, freshness: current, evidence: none, verification: content-reviewed, note: "plan del submódulo; sin hallazgos" }
@@ -258,6 +261,7 @@ modules:
       - { id: proyecto.estilo-hub, path: modules/documentation/proyecto/estilo-hub.md, audience: internal, status: draft, freshness: current, evidence: observed }
   retired_routes:
     - "modules/research/?doc=… → reemplazado por modules/documentation/?doc=research/… (2026-10-26)"
+    - "modules/research/?m=visual-usabilidad y ?m=auditoria-ui → ?m=visual-ui (redirección en el visor, 2026-10-27); la usabilidad pasa a ?m=usabilidad"
 
 figma:
   status: none
