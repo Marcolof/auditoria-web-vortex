@@ -2,14 +2,14 @@
 
 > **En una frase:** terminamos la evaluación de la web y los canales de Vortex con lo que se puede ver desde afuera; para avanzar necesitamos decisiones y datos de Vortex, y hablar con clientes reales.
 
-**Actualizado:** 26 de octubre de 2026.
+**Actualizado:** 27 de octubre de 2026.
 
 ## Dónde estamos
 
 | Etapa | Qué incluye | Estado |
 |---|---|---|
 | **1 · Entender** | Mapa de públicos, conocimiento interno, datos de clientes | En curso |
-| **2 · Evaluar** | Web, canales, aspecto visual, usabilidad, competidores | En curso |
+| **2 · Evaluar** | Web, canales, aspecto visual, sistema visual (UI), usabilidad, competidores | En curso |
 | **3 · Definir y validar** | Públicos prioritarios, test con personas reales | Pendiente |
 | **4 · Decidir** | Hallazgos finales y plan de mejoras | En curso |
 
@@ -23,6 +23,7 @@ La evaluación desde afuera está hecha. Lo que falta depende de Vortex (decisio
 | [Públicos y confianza](?m=publicos) | A quién le habla Vortex y qué necesita cada uno para confiar |
 | [Auditoría web](?m=auditoria-web) | Qué funciona y qué falta en el sitio |
 | [Visual y usabilidad simulada](?m=visual-usabilidad) | Cómo se ve, qué tan atractivo es y dónde se traba cada perfil |
+| [Auditoría UI](?m=auditoria-ui) | Qué sistema visual tiene la web, qué tan consistente es y dónde se rompe |
 | [Análisis de comunicación](?m=comunicacion) | Si LinkedIn, YouTube, Instagram y la web cuentan lo mismo |
 | [Qué mostrar en la web](?m=contenido-web) | Qué necesita ver cada público y en qué orden |
 | [Hallazgos y recomendaciones](?m=conclusiones) | Qué mejorar y en qué orden (versión preliminar) |
@@ -31,8 +32,8 @@ La evaluación desde afuera está hecha. Lo que falta depende de Vortex (decisio
 
 | | |
 |---|---|
-| Hallazgos | **29**: 3 mayores, 20 menores y 6 cosméticos. Ninguno crítico |
-| Mejoras propuestas | **17**, en tres etapas |
+| Hallazgos | **39**: 3 mayores, 22 menores y 14 cosméticos. Ninguno crítico |
+| Mejoras propuestas | **18**, en tres etapas |
 | Tareas simuladas | **9**: 3 éxitos, 5 parciales y 1 fallo |
 | Valoración del atractivo | **3,1 de 5** (opinión del revisor) |
 | Personas entrevistadas o testeadas | **Ninguna todavía** |
@@ -42,6 +43,7 @@ La evaluación desde afuera está hecha. Lo que falta depende de Vortex (decisio
 1. **Decir con claridad qué hace Vortex y para quién**, y lo mismo en todos los canales.
 2. **Mostrar resultados reales**: hoy no hay casos de clientes.
 3. **Que el sitio sea más fácil de recorrer**: más contenido y menos decoración, botones que hagan lo que prometen, imágenes y textos optimizados.
+4. **Ordenar el sistema visual antes de rediseñar**: la marca ya está; faltan reglas comunes de letra, botones y estados.
 
 ## Qué tan firme es lo que sabemos
 

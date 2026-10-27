@@ -65,6 +65,7 @@ Severidad en escala de Nielsen (0 a 4), igual que la [auditoría web](auditoria-
 | Interpretación | La escala tipográfica no tiene un sistema claro. Los textos de 12–13 px en peso liviano sobre negro cuestan, sobre todo en pantallas chicas o para personas mayores |
 | Evidencia | Estilos calculados de todos los textos de la home |
 | Recomendación | Definir una escala tipográfica corta (6 a 8 tamaños) y un mínimo de 14 px para textos de lectura |
+| Ampliación | La [auditoría UI](auditoria-ui.md) (UI3) midió las 8 páginas: 51 tamaños distintos en escritorio |
 
 ### V3 · Contraste insuficiente en el pie y texto sobre el globo — Severidad 2
 

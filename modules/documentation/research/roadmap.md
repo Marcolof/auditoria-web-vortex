@@ -215,6 +215,7 @@ Esta documentación es la fuente detallada. El módulo **UX Research** del Hub m
 | Negocio y clientes | 1, 2 | Pendiente |
 | Auditoría web | 3 | [auditoria-web.md](auditoria-web.md) |
 | Visual y usabilidad simulada | 3, 6 (simulado) | [analisis-visual.md](analisis-visual.md), [usabilidad-simulada.md](usabilidad-simulada.md) |
+| Auditoría UI | 3 | [auditoria-ui.md](auditoria-ui.md) |
 | Análisis de comunicación | 3 | [analisis-comunicacion.md](analisis-comunicacion.md) |
 | Qué mostrar en la web | 0, 3, 5, 8 | [web-que-mostrar.md](web-que-mostrar.md) (preliminar, a validar en el paso 6) |
 | Benchmark | 4 | Pendiente |

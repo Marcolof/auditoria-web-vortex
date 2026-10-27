@@ -2,7 +2,7 @@
 
 > **En una frase:** la web de Vortex tiene una base sólida; para convencer a quien contrata necesita decir con claridad qué hace y para quién, mostrar resultados reales y que cada botón lleve a donde promete.
 
-**Estado:** versión preliminar para revisar con el equipo. Reúne 29 hallazgos de la revisión de la web, los canales, el análisis visual (con una valoración subjetiva del atractivo) y una prueba de usabilidad simulada con IA, al 26 de octubre de 2026. **La prioridad es una evaluación experta, todavía no probada con personas reales**; se ajusta después de la validación con clientes.
+**Estado:** versión preliminar para revisar con el equipo. Reúne 39 hallazgos de la revisión de la web, los canales, el análisis visual (con una valoración subjetiva del atractivo), la auditoría UI y una prueba de usabilidad simulada con IA, al 26 y 27 de octubre de 2026. **La prioridad es una evaluación experta, todavía no probada con personas reales**; se ajusta después de la validación con clientes.
 
 ## Lo que ya funciona
 
@@ -31,7 +31,7 @@
 | Alinear botones y destinos | Bajo |
 | Arreglos técnicos para buscadores y asistentes de IA | Bajo |
 | Verificar dos dudas en dispositivos reales | Bajo |
-| Legibilidad y accesibilidad: contraste, tamaños de texto y de botones | Bajo |
+| Legibilidad y accesibilidad: contraste, tamaños de texto y de botones, foco visible con teclado | Bajo |
 | Optimizar imágenes: hoy pesan varias veces más de lo que se muestran | Bajo |
 
 **Etapa 2 · Pruebas de confianza.**
@@ -53,6 +53,7 @@
 | Papel de cada red y actualizar YouTube e Instagram | Bajo a medio |
 | Presencia externa y prueba con asistentes de IA | Medio |
 | Talento: acceso en el menú, vacantes, cultura y proceso | Medio |
+| Sistema visual base: reglas comunes de color, letra, botones y componentes, antes del rediseño | Medio |
 
 El esfuerzo es una estimación del equipo de UX, no del equipo de Vortex.
 
@@ -79,4 +80,4 @@ El esfuerzo es una estimación del equipo de UX, no del equipo de Vortex.
 
 ---
 
-Plan completo con la tabla de las 17 mejoras, su trazabilidad con los 29 hallazgos y cómo se mide el avance, en Documentación: [plan de mejoras](../documentation/?doc=research/plan-de-mejoras-web.md). Basado en la [auditoría web](?m=auditoria-web), el [análisis visual y la usabilidad simulada](?m=visual-usabilidad), el [análisis de comunicación](?m=comunicacion) y [qué mostrar en la web](?m=contenido-web).
+Plan completo con la tabla de las 18 mejoras, su trazabilidad con los 39 hallazgos y cómo se mide el avance, en Documentación: [plan de mejoras](../documentation/?doc=research/plan-de-mejoras-web.md). Basado en la [auditoría web](?m=auditoria-web), el [análisis visual y la usabilidad simulada](?m=visual-usabilidad), la [auditoría UI](?m=auditoria-ui), el [análisis de comunicación](?m=comunicacion) y [qué mostrar en la web](?m=contenido-web).

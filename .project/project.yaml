@@ -1,5 +1,5 @@
 schema_version: "0.5.0"
-last_updated: "2026-10-26"
+last_updated: "2026-10-27"
 
 project:
   name: "Vortex IT · Research de audiencias e imagen"
@@ -18,14 +18,15 @@ origin:
   mode: from-scratch          # carpeta vacía; fuentes públicas como evidencia
 
 strategy:
-  current_focus: "Qué debería mostrar la web de Vortex para cada público (contenido, no diseño), apoyado en el modelo de públicos, la auditoría web y el análisis de comunicación."
+  current_focus: "Auditoría UI del sitio actual (sistema visual de hecho, consistencia y quiebres) como base para el futuro rediseño; el rediseño todavía no empieza."
   intervention: not-applicable
   additional_scope: []
   recommended_next:
     - "Cerrar paso 0: revisión del modelo de públicos con dirección, comercial y marketing"
     - "Relevar qué datos internos existen (CRM, analítica, métricas de redes)"
     - "Paso 3 hecho en borrador (auditoría web + análisis de comunicación); falta la prueba con asistentes de IA"
-    - "Plan de mejoras preliminar (14 mejoras, 3 etapas); revisar con Vortex y tomar las 6 decisiones pedidas"
+    - "Plan de mejoras preliminar (18 mejoras, 39 hallazgos, 3 etapas); revisar con Vortex y tomar las 6 decisiones pedidas"
+    - "Auditoría UI hecha: siguiente paso sugerido, base del sistema visual (M18) como entrada del escenario redesign"
     - "Paso 4 benchmark: requiere lista de competidores"
     - "Revisar hallazgos de la auditoría con Vortex"
   deferred:
@@ -129,6 +130,12 @@ decisions:
   - decision: "Submódulo 'Estado del research' como primera tarjeta de Research; Plan del research remite a él para no duplicar el avance"
     basis: user
     date: "2026-10-26"
+  - decision: "Auditoría UI del sitio actual (sólo diagnóstico, sin propuesta): sistema de hecho, inventario de componentes, estados y responsive; formato texto y datos medidos, sin capturas guardadas ni Figma"
+    basis: user
+    date: "2026-10-27"
+  - decision: "Plan de mejoras actualizado a 39 hallazgos y 18 mejoras: suma UI1–UI10 y M18 (sistema visual base); UI6 y UI3 refuerzan M15; UI7 se suma a M4"
+    basis: recommended-default
+    date: "2026-10-27"
 
 sources:
   - id: web
@@ -159,6 +166,12 @@ sources:
     retrieved_at: "2026-10-26"
     local_copy: assets/brand/vortex-logo.svg
     note: "SVG revisado: sin scripts ni referencias externas"
+  - id: ui-audit-snapshot
+    url: "https://vortex-it.com/"
+    type: public-website
+    reviewed_at: "2026-10-27"
+    scope: "8 páginas ES (inicio, soluciones, cómo trabajamos, sobre, plataformas, blog, hablemos, trabajá con nosotros); reglas CSS declaradas y estilos calculados a 1280×800 y 375×812; capturas de secciones"
+    not_covered: "envío y errores de formulario, teclado completo, lector de pantalla, versión EN, anchos intermedios"
 
 delivery:
   mode: hub
@@ -166,12 +179,12 @@ delivery:
   local_status: local-verified
   repository: "https://github.com/Marcolof/auditoria-web-vortex"
   repository_visibility: public
-  repository_status: pushed   # último commit de contenido af0ca82 en main, 2026-10-26
+  repository_status: local-changes   # último push af0ca82/43c117a en main (2026-10-26); auditoría UI del 2026-10-27 sin subir
   branch: main
   deploy_target: vercel        # proyecto Vercel a crear por el usuario e importar desde el repo
   deploy_config: "vercel.json + .vercelignore; estático, sin build ni variables de entorno"
   status: local-only
-  last_verified: "2026-10-26"
+  last_verified: "2026-10-27"
 
 architecture:
   build_root: "."
@@ -217,6 +230,7 @@ modules:
       - { id: research-negocio, path: modules/research/negocio.md, audience: client, status: draft, freshness: current, evidence: none, verification: content-reviewed, note: "plan del submódulo; sin hallazgos" }
       - { id: research-auditoria-web, path: modules/research/auditoria-web.md, audience: client, status: review, freshness: current, evidence: observed, verification: content-reviewed, depends_on: [research.auditoria-web], note: "revisión experta sin usuarios; alcance sólo vortex-it.com" }
       - { id: research-visual-usabilidad, path: modules/research/visual-usabilidad.md, audience: client, status: review, freshness: current, evidence: assumption, verification: content-reviewed, depends_on: [research.analisis-visual, research.usabilidad-simulada], note: "revisión visual y usabilidad simuladas por IA; sin personas" }
+      - { id: research-auditoria-ui, path: modules/research/auditoria-ui.md, audience: client, status: review, freshness: current, evidence: observed, verification: content-reviewed, depends_on: [research.auditoria-ui], note: "diagnóstico del sistema visual hecho por IA; sin personas; no es propuesta de diseño" }
       - { id: research-comunicacion, path: modules/research/comunicacion.md, audience: client, status: review, freshness: current, evidence: observed, verification: content-reviewed, depends_on: [research.analisis-comunicacion], note: "perfiles públicos sin sesión; sin métricas; asistentes de IA no consultados" }
       - { id: research-contenido-web, path: modules/research/contenido-web.md, audience: client, status: review, freshness: current, evidence: assumption, verification: content-reviewed, depends_on: [research.web-que-mostrar], note: "propuesta de contenido; hipótesis; sin diseño ni textos finales" }
       - { id: research-benchmark, path: modules/research/benchmark.md, audience: client, status: draft, freshness: current, evidence: none, verification: content-reviewed, note: "plan del submódulo; sin hallazgos" }
@@ -240,6 +254,7 @@ modules:
       - { id: research.plan-de-mejoras-web, path: modules/documentation/research/plan-de-mejoras-web.md, audience: internal, provider: fallback, status: draft, freshness: current, evidence: observed, verification: content-reviewed, depends_on: [research.auditoria-web, research.analisis-comunicacion, research.web-que-mostrar] }
       - { id: research.analisis-visual, path: modules/documentation/research/analisis-visual.md, audience: internal, provider: fallback, status: draft, freshness: current, evidence: observed, verification: content-reviewed, depends_on: [research.auditoria-web] }
       - { id: research.usabilidad-simulada, path: modules/documentation/research/usabilidad-simulada.md, audience: internal, provider: fallback, status: draft, freshness: current, evidence: assumption, verification: content-reviewed, depends_on: [research.modelo-de-publicos, research.auditoria-web], note: "simulación con IA; no es evidencia de usuarios; tareas reutilizables en el paso 6" }
+      - { id: research.auditoria-ui, path: modules/documentation/research/auditoria-ui.md, audience: internal, provider: fallback, status: draft, freshness: current, evidence: observed, verification: content-reviewed, depends_on: [research.analisis-visual, research.auditoria-web], note: "línea de base del sistema visual para M18 y el rediseño" }
       - { id: proyecto.estilo-hub, path: modules/documentation/proyecto/estilo-hub.md, audience: internal, status: draft, freshness: current, evidence: observed }
   retired_routes:
     - "modules/research/?doc=… → reemplazado por modules/documentation/?doc=research/… (2026-10-26)"
